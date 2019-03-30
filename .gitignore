@@ -9,3 +9,5 @@ config.json
 /simple_protector.exe
 /log.txt
 /stats.txt
+*_stats.txt
+*_log.txt
