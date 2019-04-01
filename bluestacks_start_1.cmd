@@ -1,1 +1,0 @@
-hc_bot.exe --emulator_type "bluestacks" --emulator_id "Android_1" --emulator_name "Bluestacks_1" --config_file "config.txt"
