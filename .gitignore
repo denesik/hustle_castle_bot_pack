@@ -11,3 +11,8 @@ config.json
 /stats.txt
 *_stats.txt
 *_log.txt
+/bluestacks_start_test.cmd
+/config_test.txt
+/nox_screen — копия.cmd
+/nox_start_test.cmd
+/starter/
