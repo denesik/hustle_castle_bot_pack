@@ -1,1 +1,0 @@
-hc_bot.exe --emulator_type "bluestacks" --additionally "check"
