@@ -1,0 +1,1 @@
+hc_bot.exe --emulator_type "nox" --config_file "ThroneRoom_6.txt"
