@@ -1,1 +1,1 @@
-hc_bot.exe --emulator_type "nox" --emulator_id "Nox_1" --emulator_name "NoxPlayer1" --config_file "config.txt"
+bin\hc_bot.exe --emulator_type "nox" --emulator_id "Nox_1" --emulator_name "NoxPlayer1" --config_file "config.txt"

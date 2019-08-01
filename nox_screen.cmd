@@ -1,1 +1,1 @@
-hc_bot.exe --emulator_type "nox" --additionally "screenshot"
+bin\hc_bot.exe --emulator_type "nox" --additionally "screenshot"

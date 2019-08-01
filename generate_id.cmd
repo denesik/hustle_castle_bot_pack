@@ -1,1 +1,0 @@
-hc_bot.exe --additionally "get_id"
