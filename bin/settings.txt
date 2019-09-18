@@ -15,7 +15,8 @@
 
 	// Сколько времени доступно на одно состо¤ние в мс.
 	"short_state_timeout": 10000, 	
-	"long_state_timeout": 200000,		
+	"long_state_timeout": 200000,	
+	"arena_find_timeout": 600000,		
 	"recovery_state_timeout": 300000,	// 5 минут, потом уходим в ребут.	
 	
 	// Время на завершение и запуск эмулятора. 
