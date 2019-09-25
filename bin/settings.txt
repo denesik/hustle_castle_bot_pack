@@ -1,5 +1,5 @@
 {	
-	"system_version": "1.15.0_j",
+	"system_version": "1.15.0_k",
 	"debug_log": 0, 
 	
 	// Режим захвата картинки с эмулятора.
