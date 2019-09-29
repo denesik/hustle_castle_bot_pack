@@ -25,7 +25,4 @@
 	
 	// Путь к эмулятору Nox.
 	"nox_path": "D:\\Program Files\\Nox\\bin\\Nox.exe",
-	
-	// Путь к эмулятору Bluestacks.
-	"bluestacks_path": "C:\\Program Files\\BlueStacks\\HD-RunApp.exe"
 }
