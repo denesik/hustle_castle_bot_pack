@@ -1,0 +1,1 @@
+bin\hc_bot.exe --emulator_type "nox" --additionally "script" --config_file "config.txt" --algorithm_file "alg_2.chai"

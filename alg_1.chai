@@ -1,0 +1,447 @@
+// 	INPUT TYPES:
+//
+//	struct ArenaPowerInfo
+//	{
+//		int pos = -1;
+//		bool is_me = true;
+//		int my_power = 0;
+//		int other_power = 0;
+//		bool is_available = false;
+//	};
+//	
+//	using PowerData = std::vector<ArenaPowerInfo>;
+//
+//	INPUT DATA: 
+// 	
+//	PowerData power_data;	//	power_data - array of structs ArenaPowerInfo, 10 or 15 elements count.
+//	int phase;				// 	phase - number of arena phase. range: [1..5]
+//	
+//	FUNCTIONS:
+//	float GetMyPowerScale();	//	return arena_my_power_scale from config
+//	void SortOtherPowerAscending(PowerData &data);	// sort input power data from other power;
+//	void SetPosition(int pos);	// set result position. range: [0..power_data.size() - 1] ([0..9] or [0-14]). need to call at the end of the script
+//	
+
+// Список всех слабых противников, которых можно убить на данный момент.
+def GetWeak(data) 
+{
+	var out = PowerData()
+	for (var i = 0; i < data.size(); ++i)
+	{	
+		if (!data[i].is_me && data[i].is_available && data[i].my_power > data[i].other_power)
+		{
+			out.push_back(data[i])
+		}
+	}
+	SortOtherPowerAscending(out)
+	return out
+}
+
+// Список всех противников, которых можно убить на данный момент.
+def GetAll(data) 
+{
+	var out = PowerData()
+	for (var i = 0; i < data.size(); ++i)
+	{	
+		if (!data[i].is_me && data[i].is_available)
+		{
+			out.push_back(data[i])
+		}
+	}
+	SortOtherPowerAscending(out)
+	return out
+}
+
+def GetScaled(data) 
+{
+	var out = PowerData()
+	var scale = GetMyPowerScale()
+	for (var i = 0; i < data.size(); ++i)
+	{	
+		out.push_back(data[i])
+		out[i].my_power *= scale
+	}
+	return out
+}
+
+def PrintPowerData(data)
+{
+	print("++++++++++++++++++++++")
+	for (var i = 0; i < data.size(); ++i) 
+	{
+		print(data[i].pos.to_string() + " " + data[i].is_me.to_string() + " " + data[i].my_power.to_string() + " " + data[i].other_power.to_string() + " " + data[i].is_available.to_string())
+	}
+	print("----------------------")
+}
+
+def FindMe(data) 
+{
+	var me = -1
+	
+	for (var i = 0; i < data.size(); ++i) 
+	{
+		if(data[i].is_me)
+		{
+			me = data[i].pos
+			break
+		}
+	}
+	
+	return me
+}
+
+
+// Ищем тех, кто ниже меня и не могут убить 2 вверх.
+def GetPhase3(data) 
+{
+	var tmp_data = data;
+	var out = PowerData()
+	
+	var me_pos = FindMe(data)
+	print(me_pos)
+	tmp_data[me_pos].other_power = tmp_data[me_pos].my_power
+	
+	PrintPowerData(tmp_data)
+	// для противников ниже меня
+	for (var i = 0; i < tmp_data.size(); ++i) 
+	{
+		if (tmp_data[i].pos > me_pos && tmp_data[i].is_available && tmp_data[i].my_power > tmp_data[i].other_power)
+		{
+			var count = 0 // противник ниже меня и может убить верх столько.
+			for (var j = 0; j < tmp_data.size(); ++j) 
+			{
+				if (tmp_data[i].other_power > tmp_data[j].other_power)
+				{
+					++count;
+				}
+				if (tmp_data[j].pos == tmp_data[i].pos)
+				{
+					break;
+				}
+			}
+			if (count < 2)
+			{
+				out.push_back(tmp_data[i])
+			}
+		}
+	}
+	PrintPowerData(out)
+	SortOtherPowerAscending(out)
+	
+	// исключаемсамого ближнего ниже меня.
+	if (me_pos + 1 < data.size())
+	{
+		for (var i = 0; i < out.size(); ++i) 
+		{
+			if (out[i].pos == me_pos + 1)
+			{
+				out.erase_at(i)
+				break;
+			}
+		}
+	}
+	
+	return out
+}
+
+// количество слабых противников выше
+def CountWeatAbove(data, pos)
+{
+	var out = 0
+	for (var i = 0; i < data.size(); ++i)
+	{
+		if (data[i].pos == pos)
+		{
+			break;
+		}
+		if (data[pos].other_power > data[i].other_power)
+		{
+			++out;
+		}
+	}
+	
+	return out
+}
+
+// Список слабых противников выше меня, которые не могут убить кого то выше себя.
+def GetAboveWeakCannot(data) 
+{
+	var out = PowerData()
+	
+	for (var i = 0; i < data.size(); ++i)
+	{	
+		if (data[i].is_me)
+		{
+			break
+		}
+		
+		if (data[i].is_available && data[i].my_power > data[i].other_power && CountWeatAbove(data, data[i].pos) == 0)
+		{
+			out.push_back(data[i])
+		}
+	}
+	SortOtherPowerAscending(out)
+	return out
+}
+
+// Список слабых противников выше меня, которые могут убить кого то выше себя.
+def GetAboveWeakCan(data) 
+{
+	var out = PowerData()
+	
+	for (var i = 0; i < data.size(); ++i)
+	{	
+		if (data[i].is_me)
+		{
+			break
+		}
+		
+		if (data[i].is_available && data[i].my_power > data[i].other_power && CountWeatAbove(data, data[i].pos) >= 1)
+		{
+			out.push_back(data[i])
+		}
+	}
+	SortOtherPowerAscending(out)
+	return out
+}
+
+// Список слабых противников выше меня, которых можно убить на данный момент.
+def GetAboveWeak(data) 
+{
+	var out = PowerData()
+	
+	for (var i = 0; i < data.size(); ++i)
+	{	
+		if (data[i].is_me)
+		{
+			break
+		}
+		
+		if (data[i].is_available && data[i].my_power > data[i].other_power)
+		{
+			out.push_back(data[i])
+		}
+	}
+	SortOtherPowerAscending(out)
+	return out
+}
+
+// Список слабых противников ниже меня, которых можно убить на данный момент.
+def GetBelowWeak(data) 
+{
+	var out = PowerData()
+	
+	var me_finded = false;
+	for (var i = 0; i < data.size(); ++i)
+	{	
+		if (data[i].is_me)
+		{
+			me_finded = true
+			continue
+		}
+		if (!me_finded)
+		{
+			continue
+		}
+		
+		if (data[i].is_available && data[i].my_power > data[i].other_power)
+		{
+			out.push_back(data[i])
+		}
+	}
+	SortOtherPowerAscending(out)
+	return out
+}
+
+//=============
+
+def main(power_data, phase)
+{
+	var reserve_choise = false
+	var scaled_power_data = GetScaled(power_data)
+	//PrintPowerData(scaled_power_data)
+	if (phase == 1)
+	{
+		var all = GetAll(scaled_power_data)
+		var weak = GetWeak(scaled_power_data)
+
+		// Удаляем из списка всех доступных самого слабого.
+		if (weak.size() != 0)
+		{
+			for (var i = 0; i < all.size(); ++i) 
+			{
+				if (all[i].pos == weak[0].pos)
+				{
+					all.erase_at(i)
+					break
+				}
+			}
+		}
+		
+		//PrintPowerData(all)
+		
+		if (all.size() != 0)
+		{
+			return all[0].pos;
+		}
+		else
+		{
+			reserve_choise = true
+		}
+	}	
+	
+	if (phase == 2)
+	{
+		reserve_choise = true
+	}
+	
+	if (phase == 3)
+	{
+		var opps = GetPhase3(scaled_power_data)
+		PrintPowerData(opps)
+		if (opps.size() != 0)
+		{
+			return opps[opps.size() - 1].pos;
+		}
+		else
+		{
+			reserve_choise = true
+		}
+	}
+	
+	if (phase == 4)
+	{
+		var list = GetAboveWeakCan(scaled_power_data)
+		if (list.size() >= 2)
+		{
+			var oops = GetAboveWeak(scaled_power_data)
+			if(oops.size() != 0)
+			{
+				return oops[0].pos
+			}
+		}
+		else
+		{
+			if (list.size() == 1)
+			{
+				var oops = GetAboveWeak(scaled_power_data)
+				for (var i = 0; i < oops.size(); ++i) 
+				{
+					if (oops[i].pos == list[0].pos)
+					{
+						oops.erase_at(i)
+						break
+					}
+				}
+				
+				if (oops.size() != 0)
+				{
+					return oops[0].pos
+				}
+			}
+		}
+		
+		var oops = GetAboveWeakCannot(scaled_power_data)
+		for (var i = 0; i < oops.size(); ++i) 
+		{
+			if (oops[i].pos == 0)
+			{
+				oops.erase_at(i)
+				break
+			}
+		}
+		if (oops.size() != 0)
+		{
+			return oops[0].pos
+		}
+		
+		if (scaled_power_data[0].is_available && !scaled_power_data[0].is_me && scaled_power_data[0].my_power > scaled_power_data[0].other_power)
+		{
+			return scaled_power_data[0].pos;
+		}
+		
+		var opps2 = GetAboveWeak(scaled_power_data);
+		if (!opps2.empty())
+		{
+			return opps2[0].pos;
+		}
+		
+		reserve_choise = true
+	}	
+	
+	if (phase == 5)
+	{
+		var opps = GetAboveWeak(scaled_power_data);
+		if (opps.size() != 0)
+		{
+			return opps[0].pos;
+		}
+		else
+		{
+			reserve_choise = true;
+		}
+	}
+	
+	if (reserve_choise)
+	{
+		var opps = GetBelowWeak(scaled_power_data);
+		if (phase == 1 || phase == 2 || phase == 3)
+		{
+			auto weak = GetWeak(scaled_power_data);
+			if (weak.size() != 0)
+			{
+				for (var i = 0; i < oops.size(); ++i) 
+				{
+					if (oops[i].pos == weak[0].pos)
+					{
+						oops.erase_at(i)
+						break
+					}
+				}
+				if (oops.size() != 0)
+				{
+					return oops[0].pos
+				}
+			}
+		}
+	}
+	
+	if (reserve_choise)
+	{
+		auto opps = GetWeak(scaled_power_data);
+		if (opps.size() != 0)
+		{
+			return opps[0].pos;
+		}
+	}
+	
+	var opps = GetAll(scaled_power_data);
+	return opps[0].pos;
+}
+
+def TestSetInputPhaseOne()
+{
+	var out = PowerData()
+	out.push_back(ArenaPowerInfo(0, false, 70000, 30000, true))
+	out.push_back(ArenaPowerInfo(1, false, 70000, 10258, true))
+	out.push_back(ArenaPowerInfo(2, false, 70000, 36000, true))
+	out.push_back(ArenaPowerInfo(3, true, 70000, 0, false))
+	out.push_back(ArenaPowerInfo(4, false, 70000, 40332, true))
+	out.push_back(ArenaPowerInfo(5, false, 70000, 60432, true))
+	out.push_back(ArenaPowerInfo(6, false, 70000, 23455, true))
+	out.push_back(ArenaPowerInfo(7, false, 70000, 54654, true))
+	out.push_back(ArenaPowerInfo(8, false, 70000, 74435, true))
+	out.push_back(ArenaPowerInfo(9, false, 70000, 54654, true))
+	
+	return out
+}
+
+//power_data = TestSetInputPhaseOne()
+//phase = 1
+//PrintPowerData(power_data)
+//var pos = main(power_data, phase)
+//print(pos)
+
+
+SetPosition(main(power_data, phase))
+
