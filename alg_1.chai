@@ -314,45 +314,45 @@ def main(power_data, phase)
 		var list = GetAboveWeakCan(scaled_power_data)
 		if (list.size() >= 2)
 		{
-			var oops = GetAboveWeak(scaled_power_data)
-			if(oops.size() != 0)
+			var opps = GetAboveWeak(scaled_power_data)
+			if(opps.size() != 0)
 			{
-				return oops[0].pos
+				return opps[0].pos
 			}
 		}
 		else
 		{
 			if (list.size() == 1)
 			{
-				var oops = GetAboveWeak(scaled_power_data)
-				for (var i = 0; i < oops.size(); ++i) 
+				var opps = GetAboveWeak(scaled_power_data)
+				for (var i = 0; i < opps.size(); ++i) 
 				{
-					if (oops[i].pos == list[0].pos)
+					if (opps[i].pos == list[0].pos)
 					{
-						oops.erase_at(i)
+						opps.erase_at(i)
 						break
 					}
 				}
 				
-				if (oops.size() != 0)
+				if (opps.size() != 0)
 				{
-					return oops[0].pos
+					return opps[0].pos
 				}
 			}
 		}
 		
-		var oops = GetAboveWeakCannot(scaled_power_data)
-		for (var i = 0; i < oops.size(); ++i) 
+		var opps = GetAboveWeakCannot(scaled_power_data)
+		for (var i = 0; i < opps.size(); ++i) 
 		{
-			if (oops[i].pos == 0)
+			if (opps[i].pos == 0)
 			{
-				oops.erase_at(i)
+				opps.erase_at(i)
 				break
 			}
 		}
-		if (oops.size() != 0)
+		if (opps.size() != 0)
 		{
-			return oops[0].pos
+			return opps[0].pos
 		}
 		
 		if (scaled_power_data[0].is_available && !scaled_power_data[0].is_me && scaled_power_data[0].my_power > scaled_power_data[0].other_power)
@@ -390,17 +390,17 @@ def main(power_data, phase)
 			auto weak = GetWeak(scaled_power_data);
 			if (weak.size() != 0)
 			{
-				for (var i = 0; i < oops.size(); ++i) 
+				for (var i = 0; i < opps.size(); ++i) 
 				{
-					if (oops[i].pos == weak[0].pos)
+					if (opps[i].pos == weak[0].pos)
 					{
-						oops.erase_at(i)
+						opps.erase_at(i)
 						break
 					}
 				}
-				if (oops.size() != 0)
+				if (opps.size() != 0)
 				{
-					return oops[0].pos
+					return opps[0].pos
 				}
 			}
 		}
