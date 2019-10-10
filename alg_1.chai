@@ -98,10 +98,10 @@ def GetPhase3(data)
 	var out = PowerData()
 	
 	var me_pos = FindMe(data)
-	print(me_pos)
+	//print(me_pos)
 	tmp_data[me_pos].other_power = tmp_data[me_pos].my_power
 	
-	PrintPowerData(tmp_data)
+	//PrintPowerData(tmp_data)
 	// для противников ниже меня
 	for (var i = 0; i < tmp_data.size(); ++i) 
 	{
@@ -125,7 +125,7 @@ def GetPhase3(data)
 			}
 		}
 	}
-	PrintPowerData(out)
+	//PrintPowerData(out)
 	SortOtherPowerAscending(out)
 	
 	// исключаемсамого ближнего ниже меня.
