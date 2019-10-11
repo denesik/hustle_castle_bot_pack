@@ -105,13 +105,28 @@ def GetAllSorted(data)
 	return out
 }
 
+// Список всех противников, исключая тех, кто попал в черный список, которых можно убить на данный момент.
+def GetAllWithoutBlacklistSorted(data) 
+{
+	var out = PowerData()
+	for (var i = 0; i < data.size(); ++i)
+	{	
+		if (!data[i].is_me && data[i].is_available && data[i].blacklist_count == 0)
+		{
+			out.push_back(data[i])
+		}
+	}
+	SortOtherPowerAscending(out)
+	return out
+}
+
 // Список всех слабых противников, которых можно убить на данный момент.
 def GetWeakSorted(data) 
 {
 	var out = PowerData()
 	for (var i = 0; i < data.size(); ++i)
 	{	
-		if (!data[i].is_me && data[i].is_available && data[i].my_power > data[i].other_power)
+		if (!data[i].is_me && data[i].is_available && data[i].my_power > data[i].other_power && data[i].blacklist_count == 0)
 		{
 			out.push_back(data[i])
 		}
@@ -132,7 +147,7 @@ def GetWeakAboveSorted(data)
 			break
 		}
 		
-		if (data[i].is_available && data[i].my_power > data[i].other_power)
+		if (data[i].is_available && data[i].my_power > data[i].other_power && data[i].blacklist_count == 0)
 		{
 			out.push_back(data[i])
 		}
@@ -159,7 +174,7 @@ def GetWeakBelowSorted(data)
 			continue
 		}
 		
-		if (data[i].is_available && data[i].my_power > data[i].other_power)
+		if (data[i].is_available && data[i].my_power > data[i].other_power && data[i].blacklist_count == 0)
 		{
 			out.push_back(data[i])
 		}
@@ -200,7 +215,7 @@ def GetWeakAboveMeSmallSorted(data)
 			break
 		}
 		
-		if (data[i].is_available && data[i].my_power > data[i].other_power && CountWeatAbove(data, data[i].pos) == 0)
+		if (data[i].is_available && data[i].my_power > data[i].other_power && CountWeatAbove(data, data[i].pos) == 0 && data[i].blacklist_count == 0)
 		{
 			out.push_back(data[i])
 		}
@@ -221,7 +236,7 @@ def GetWeakAboveMeBigSorted(data)
 			break
 		}
 		
-		if (data[i].is_available && data[i].my_power > data[i].other_power && CountWeatAbove(data, data[i].pos) > 0)
+		if (data[i].is_available && data[i].my_power > data[i].other_power && CountWeatAbove(data, data[i].pos) > 0 && data[i].blacklist_count == 0)
 		{
 			out.push_back(data[i])
 		}
@@ -246,7 +261,7 @@ def GetPhase3(data)
 	for (var i = 0; i < data.size(); ++i) 
 	{
 		// ниже меня, доступен и слабее.
-		if (data[i].pos > me_pos && data[i].is_available && data[i].my_power > data[i].other_power)
+		if (data[i].pos > me_pos && data[i].is_available && data[i].my_power > data[i].other_power && data[i].blacklist_count == 0)
 		{
 			if (CountWeatAbove(data, data[i].pos) < 2)
 			{
@@ -281,7 +296,7 @@ def main(power_data, phase)
 	//PrintPowerData(scaled_power_data)
 	if (phase == 1)
 	{
-		var all = GetAllSorted(scaled_power_data)
+		var all = GetAllWithoutBlacklistSorted(scaled_power_data)
 		var weak = GetWeakSorted(scaled_power_data)
 		
 		// Удаляем из списка всех доступных самого слабого.
@@ -456,6 +471,14 @@ def main(power_data, phase)
 			var ret_val = opps[0].pos;
 			return ret_val
 		}
+	}
+	
+	if (reserve_choise)
+	{
+		// Если не получилось, атакуем самого слабого из всех доступных, исключая тех кто в чс.
+		var opps = GetAllWithoutBlacklistSorted(scaled_power_data);
+		var ret_val = opps[0].pos;
+		return ret_val
 	}
 	
 	// Если не получилось, атакуем самого слабого из всех доступных.
