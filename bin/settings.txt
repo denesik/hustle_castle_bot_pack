@@ -11,6 +11,8 @@
 	// 1 - работает на некоторых компьютерах. Окно эмулятора может быть перекрыто другими окнами, но не должно быть свернуто.
 	"capute_mode": 1, 			
 	
+	// Сколько часов хранится запись в blacklist
+	"blacklist_hours": 72, 
 	
 	// If the emulator does not respond to the esc signal that the bot sends, try setting the value 1 to this field.
 	// Если эмулятор не реагирует на сигнал esc, который посылает бот, попробуйте поставить значение 1 в данном поле.

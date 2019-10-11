@@ -8,6 +8,7 @@
 //		int other_power = 0;
 //		bool is_available = false;
 //		int battle_state = 0; // 1 - victory, 2 - defeat, 0 - other
+//		int blacklist_count = 0;
 //	};
 //	
 //	using PowerData = std::vector<ArenaPowerInfo>;
@@ -70,7 +71,7 @@ def PrintPowerData(data)
 	print("++++++++++++++++++++++")
 	for (var i = 0; i < data.size(); ++i) 
 	{
-		print(data[i].pos.to_string() + " " + data[i].is_me.to_string() + " " + data[i].my_power.to_string() + " " + data[i].other_power.to_string() + " " + data[i].is_available.to_string() + " " + data[i].battle_state.to_string())
+		print(data[i].pos.to_string() + " " + data[i].is_me.to_string() + " " + data[i].my_power.to_string() + " " + data[i].other_power.to_string() + " " + data[i].is_available.to_string() + " " + data[i].battle_state.to_string() + " " + data[i].blacklist_count.to_string())
 	}
 	print("----------------------")
 }
@@ -434,21 +435,21 @@ def main(power_data, phase)
 def TestSetInputPhaseOne()
 {
 	var out = PowerData()
-	out.push_back(ArenaPowerInfo(0, false, 86090, 60302, true, 0))
-	out.push_back(ArenaPowerInfo(1, false, 86090, 130166, true, 0))
-	out.push_back(ArenaPowerInfo(2, false, 86090, 93969, true, 0))
-	out.push_back(ArenaPowerInfo(3, false, 86090, 99814, true, 0))
-	out.push_back(ArenaPowerInfo(4, false, 86090, 95711, true, 0))
-	out.push_back(ArenaPowerInfo(5, false, 86090, 79431, true, 0))
-	out.push_back(ArenaPowerInfo(6, false, 86090, 70064, true, 0))
-	out.push_back(ArenaPowerInfo(7, false, 86090, 50213, true, 0))
-	out.push_back(ArenaPowerInfo(8, false, 86090, 59332, true, 0))
-	out.push_back(ArenaPowerInfo(9, false, 86090, 58847, true, 0))
-	out.push_back(ArenaPowerInfo(10, false, 86090, 66808, true, 0))
-	out.push_back(ArenaPowerInfo(11, false, 86090, 50379, true, 0))
-	out.push_back(ArenaPowerInfo(12, false, 0, 0, false, 0))
-	out.push_back(ArenaPowerInfo(13, false, 86090, 49812, true, 0))
-	out.push_back(ArenaPowerInfo(14, false, 86090, 60907, true, 0))
+	out.push_back(ArenaPowerInfo(0, false, 86090, 60302, true, 0, 0))
+	out.push_back(ArenaPowerInfo(1, false, 86090, 130166, true, 0, 0))
+	out.push_back(ArenaPowerInfo(2, false, 86090, 93969, true, 0, 0))
+	out.push_back(ArenaPowerInfo(3, false, 86090, 99814, true, 0, 0))
+	out.push_back(ArenaPowerInfo(4, false, 86090, 95711, true, 0, 0))
+	out.push_back(ArenaPowerInfo(5, false, 86090, 79431, true, 0, 0))
+	out.push_back(ArenaPowerInfo(6, false, 86090, 70064, true, 0, 0))
+	out.push_back(ArenaPowerInfo(7, false, 86090, 50213, true, 0, 0))
+	out.push_back(ArenaPowerInfo(8, false, 86090, 59332, true, 0, 0))
+	out.push_back(ArenaPowerInfo(9, false, 86090, 58847, true, 0, 0))
+	out.push_back(ArenaPowerInfo(10, false, 86090, 66808, true, 0, 0))
+	out.push_back(ArenaPowerInfo(11, false, 86090, 50379, true, 0, 0))
+	out.push_back(ArenaPowerInfo(12, false, 0, 0, false, 0, 0))
+	out.push_back(ArenaPowerInfo(13, false, 86090, 49812, true, 0, 0))
+	out.push_back(ArenaPowerInfo(14, false, 86090, 60907, true, 0, 0))
 	
 	return out
 }
