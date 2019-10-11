@@ -23,3 +23,4 @@ config.json
 /bin/authcache.bin
 /Bluestacks_netlog.txt
 /set_token.cmd
+*.blacklist
