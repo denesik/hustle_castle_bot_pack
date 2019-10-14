@@ -106,15 +106,13 @@
 		
 		// used in modes 0.
 		// используетс€ в режимах 0.
-										// algorithm 0 - old version (down, down, down, up, up).
-										// 1 - the new version (down, down, down, up, up) earns a couple of points more than algorithm 0.
-										// 2 - modernization of the new version (down, up, up, up, up).
-		"arena_algorithm": 1, 			// алгоритм 0 - стара€ верси€ (вниз, вниз, вниз, вверх, вверх). 
-										// 1 - нова€ верси€ (вниз, вниз, вниз, вверх, вверх) зарабатывает на пару очков больше, чем алгоритм 0. 
-										// 2 - модернизаци€ новой версии (вниз, вверх, вверх, вверх, вверх).
-										// 3 - использовать скрипт.
-										
-		"algorithm_file": "alg_1.chai",								
+										// arena algorithm.
+										// adaptive.chai - adaptive algorithm, we kill about a strong player and play 4 up, or play down, down, down, up, up.
+										// end_game.chai - algorithm for high arenas. down, up, up, up, up.
+										// алгоритм арены. 
+										// adaptive.chai - адаптивный алгоритм, убиваемс€ о сильного игрока и играем 4 вверх, или играем вниз, вниз, вниз, вверх, вверх.
+										// end_game.chai - алгоритм дл€ высоких арен. вниз, вверх, вверх, вверх, вверх.
+		"algorithm_file": "adaptive.chai",								
 										
 										// operation mode. 0 - for apples, 1 - for tickets, 2 - for Apples, if run out - for tickets, 3 - for tickets, if run out - for Apples.
 		"arena_ticket": 0, 				// режим работы. 0 - за €блоки, 1 - за билеты, 2 - за яблоки, если кончаютс€ - за билеты, 3 - за билеты, если кончаются - за яблоки.
@@ -196,11 +194,8 @@
 		"repeat": 1,					// повтор€ть 1 раз
 		"program": 0,					// арена
 		
-		"arena_algorithm": 1, 			// алгоритм 0 - стара€ верси€ (вниз, вниз, вниз, вверх, вверх). 
-										// 1 - нова€ верси€ (вниз, вниз, вниз, вверх, вверх) зарабатывает на пару очков больше, чем алгоритм 0. 
-										// 2 - модернизаци€ новой версии (вниз, вверх, вверх, вверх, вверх).
-										// 3 - использовать скрипт.
-		"algorithm_file": "alg_1.chai",	
+		"algorithm_file": "adaptive.chai",	
+		
 		"arena_ticket": 2, 				// режим работы. 0 - за €блоки, 1 - за билеты, 2 - за яблоки, если кончаютс€ - за билеты, 3 - за билеты, если кончаются - за яблоки.
 		"arena_invite": 0,				// приглашать в конце арены игроков в клан? 1 - да, остальные значени€ - нет.						
 		"arena_check_mail": 1, 			// забирать награду с почты. да - 1, нет - остальные значени€
