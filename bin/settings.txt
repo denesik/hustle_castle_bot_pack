@@ -1,5 +1,5 @@
 {	
-	"system_version": "1.15.0_o",
+	"system_version": "1.16.0_p",
 	"debug_log": 0, 
 	
 	
@@ -43,4 +43,6 @@
 	// Path to the Nox emulator. Slashes should be double !!! (\\) - 2 slashes and not 1.
 	// Путь к эмулятору Nox. Слеши должны быть двойные!!! (\\) - 2 слеша а не 1.
 	"nox_path": "D:\\Program Files\\Nox\\bin\\Nox.exe",
+	
+	"event_map_size": 16,
 }
