@@ -136,6 +136,9 @@
 										// multiplier of its power when attacking opponents on the map. the resulting power is used to calculate the attacked enemy.
 		"enemy_my_power_scale": 1.0,	// множитель своей мощности при нападении на противников на карте. результирующая мощность используется для вычисления атакуемого противника. 
 		
+										// multiplier of its power when attacking opponents on the map. we attack if the enemy has more power than this value times our power.
+		"enemy_my_power_scale_min": 0.0,	// множитель своей мощности при нападении на противников на карте. нападаем, если у врага больше мощность чем это значение, умноженное на нашу мощность.
+		
 		//---------------------------------------------------------------------------
 		
 		// used in modes 2.
