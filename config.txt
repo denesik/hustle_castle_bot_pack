@@ -179,6 +179,10 @@
 		// используется в режимах 15.
 										// how many times to scroll the friends page
 		"friends_scroll": 4,			// сколько раз прокручивать страницу друзей
+		
+		//---------------------------------------------------------------------------
+										// if specified, writes this text, otherwise it writes a random message from bin/messages.txt
+		//"chat_message": "text",			// если указано, пишет этот текст, иначе пишет случайное сообщение из bin/messages.txt
 	},
 	
 "objects":
@@ -338,6 +342,8 @@
 	{
 		"repeat": 0,					
 		"program": 21,					// сообщение в чат
+		
+		//"chat_message": "text",			// если указано, пишет этот текст, иначе пишет случайное сообщение из bin/messages.txt
 	},		
 	
 	// 04:00 - 06:00 msk clan war.
