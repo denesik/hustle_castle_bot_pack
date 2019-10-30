@@ -1,7 +1,5 @@
 {	
-	"system_version": "1.16.0_p",
 	"debug_log": 0, 
-	
 	
 	// Image capture mode from the emulator.
 	// 0 - should work on all computers. It is necessary that the emulator window is on top of all windows.
@@ -23,10 +21,6 @@
 	// Интервал, через который сканируется экран в мс
 	"pause": 500, 						
 	
-	"host": "37.228.116.78",
-	"port": 33659,
-
-	
 	// How much time is available for one state in ms.
 	// Сколько времени доступно на одно состо¤ние в мс.
 	"short_state_timeout": 10000, 	
@@ -43,6 +37,4 @@
 	// Path to the Nox emulator. Slashes should be double !!! (\\) - 2 slashes and not 1.
 	// Путь к эмулятору Nox. Слеши должны быть двойные!!! (\\) - 2 слеша а не 1.
 	"nox_path": "D:\\Program Files\\Nox\\bin\\Nox.exe",
-	
-	"event_map_size": 16,
 }

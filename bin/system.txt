@@ -1,0 +1,8 @@
+{	
+	"system_version": "1.16.1_q",
+
+	"host": "37.228.116.78",
+	"port": 33659,
+
+	"event_map_size": 16,
+}
