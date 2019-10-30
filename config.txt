@@ -116,7 +116,7 @@
 										// алгоритм арены. 
 										// adaptive.chai - адаптивный алгоритм, убиваемс€ о сильного игрока и играем 4 вверх, или играем вниз, вниз, вниз, вверх, вверх.
 										// end_game.chai - алгоритм дл€ высоких арен. вниз, вверх, вверх, вверх, вверх.
-		"algorithm_file": "adaptive.chai",								
+		"algorithm_file": "standart.chai",								
 										
 										// operation mode. 0 - for apples, 1 - for tickets, 2 - for Apples, if run out - for tickets, 3 - for tickets, if run out - for Apples.
 		"arena_ticket": 0, 				// режим работы. 0 - за €блоки, 1 - за билеты, 2 - за яблоки, если кончаютс€ - за билеты, 3 - за билеты, если кончаются - за яблоки.
@@ -205,7 +205,7 @@
 		"repeat": 1,					// повтор€ть 1 раз
 		"program": 0,					// арена
 		
-		"algorithm_file": "adaptive.chai",	
+		"algorithm_file": "standart.chai",	
 		
 		"arena_ticket": 2, 				// режим работы. 0 - за €блоки, 1 - за билеты, 2 - за яблоки, если кончаютс€ - за билеты, 3 - за билеты, если кончаются - за яблоки.
 		"arena_invite": 0,				// приглашать в конце арены игроков в клан? 1 - да, остальные значени€ - нет.						
