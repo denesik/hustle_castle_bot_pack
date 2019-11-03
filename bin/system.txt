@@ -1,5 +1,5 @@
 {	
-	"system_version": "1.16.1_r",
+	"system_version": "1.16.1_s",
 
 	"host": "37.228.116.78",
 	"port": 33659,

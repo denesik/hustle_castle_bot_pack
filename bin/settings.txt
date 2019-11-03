@@ -11,6 +11,10 @@
 	
 	// Сколько часов хранится запись в blacklist
 	"blacklist_hours": 72, 
+
+	// 0 - автообновления включены,
+	// 1 - автообновления выключены.
+	"auto_update_disable": 0, 
 	
 	// If the emulator does not respond to the esc signal that the bot sends, try setting the value 1 to this field.
 	// Если эмулятор не реагирует на сигнал esc, который посылает бот, попробуйте поставить значение 1 в данном поле.
