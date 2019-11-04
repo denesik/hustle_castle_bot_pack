@@ -183,6 +183,8 @@
 		//---------------------------------------------------------------------------
 										// if specified, writes this text, otherwise it writes a random message from bin/messages.txt
 		"chat_message": "message",		// текст сообщения в чат
+	
+		"chat_global": 0,				// 1 - переключиться в глобальный чат. не переключаться - остальные значения.
 	},
 	
 "objects":
@@ -202,7 +204,7 @@
 	// Данный раздел всегда выполняется по кругу.
 	
 	{
-		"repeat": 0,					// повторять 1 раз
+		"repeat": 1,					// повторять 1 раз
 		"program": 0,					// арена
 		
 		"algorithm_file": "standart.chai",	
@@ -340,10 +342,11 @@
 	},
 	
 	{
-		"repeat": 1,					
+		"repeat": 0,					
 		"program": 21,					// сообщение в чат
 		
 		"chat_message": "тест русский",			// текст сообщения
+		"chat_global": 1,				// 1 - переключиться в глобальный чат.
 	},		
 	
 	// 04:00 - 06:00 msk clan war.

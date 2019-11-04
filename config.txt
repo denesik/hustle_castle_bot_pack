@@ -183,6 +183,8 @@
 		//---------------------------------------------------------------------------
 										// if specified, writes this text, otherwise it writes a random message from bin/messages.txt
 		"chat_message": "message",		// текст сообщения в чат
+	
+		"chat_global": 0,				// 1 - переключиться в глобальный чат. не переключаться - остальные значения.
 	},
 	
 "objects":
@@ -343,7 +345,8 @@
 		"repeat": 0,					
 		"program": 21,					// сообщение в чат
 		
-		"chat_message": "message",			// текст сообщения
+		"chat_message": "hello",			// текст сообщения
+		"chat_global": 1,				// 1 - переключиться в глобальный чат.
 	},		
 	
 	// 04:00 - 06:00 msk clan war.
