@@ -9,6 +9,11 @@
 	// 1 - работает на некоторых компьютерах. Окно эмулятора может быть перекрыто другими окнами, но не должно быть свернуто.
 	"capute_mode": 1, 			
 	
+	// Режим сравнения 
+	// 0 - старый режим, norm
+	// 1 - новый режим, matchTemplate
+	"compare_method": 1,
+	
 	// Сколько часов хранится запись в blacklist
 	"blacklist_hours": 72, 
 
@@ -40,5 +45,5 @@
 	
 	// Path to the Nox emulator. Slashes should be double !!! (\\) - 2 slashes and not 1.
 	// Путь к эмулятору Nox. Слеши должны быть двойные!!! (\\) - 2 слеша а не 1.
-	"nox_path": "D:\\Program Files\\Nox\\bin\\Nox.exe",
+	"nox_path": "F:\\Nox\\bin\\Nox.exe",
 }
