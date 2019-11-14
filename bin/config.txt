@@ -86,7 +86,7 @@
 		"disable_recovery": 0,			// выключить систему восстановления
 		
 										// page opening time in ms
-		"open_timeout": 1000,			// время открытия страницы в мс
+		"open_timeout": 3000,			// время открытия страницы в мс
 		
 										// watch ads when there are few apples? 1 - yes, other values - no.
 		"advertising_apple": 1,			// смотреть рекламу когда мало яблок? 1 - да, остальные значения - нет.
@@ -95,10 +95,10 @@
 		"advertising_battle": 1,		// смотреть рекламу если проиграли бой? 1 - да, остальные значения - нет.
 		
 											// how much to wait if you logged in from another device in ms. 300000 == 5 minutes.
-		"another_device_timeout": 300000, 	// сколько ждать, если зашли с другого устройства в мс. 300000 == 5 минут.
+		"another_device_timeout": 600000, 	// сколько ждать, если зашли с другого устройства в мс. 300000 == 5 минут.
 		
 										// how long it takes to wait for an advertisement.
-		"advertising_timeout": 32000,	// сколько времени ждать рекламу.
+		"advertising_timeout": 45000,	// сколько времени ждать рекламу.
 		
 										// type of event (if running). 0 - maps (scar, etc.), 1 - path (dragon, grave, etc. 3 branches)
 		"event_type": 0,				// тип ивента (если запущен). 0 - карты (шрум и т.д.), 1 - путь (дракон, грав и т.д. 3 ветки)
@@ -374,6 +374,26 @@
 		
 		"chat_message": "hello",			// текст сообщения
 		"chat_global": 1,				// 1 - переключиться в глобальный чат.
+	},		
+
+	{
+		"repeat": 0,					
+		"program": 22,					// открыть ежедневный сундук
+	},		
+
+	{
+		"repeat": 0,					
+		"program": 23,					// забрать подарки
+	},		
+
+	{
+		"repeat": 0,					
+		"program": 25,					// купить яблоки за алмазы в магазине
+	},		
+	
+	{
+		"repeat": 0,					
+		"program": 26,					// забрать почту
 	},		
 	
 	{
