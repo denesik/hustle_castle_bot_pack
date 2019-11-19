@@ -1,43 +1,4 @@
 {
-// list of all modes: (specified below in the "program" option :)
-// 3 - collecting resources in the castle (clouds, desires, apples, gold, improving the level of residents, incidents)
-// 0 - arena
-// 4 - enemies on the map (robberies)
-// 7 - intrusions
-// 13 - bay
-// 2 - portal
-// 1 - passing the map in the event
-//
-// 15 - gifts to friends
-// 5 - random pause
-// 8 - reset the camera position
-//
-// 6 - view the advertising chest in the store
-// 10 - view ads in daily tasks
-// 11 - viewing ads in the arena
-// 16 - viewing ads in the portal
-// 17 - view advertising in the training room (before that, you need to start mode 8 and set the rooms according to the instructions)
-// 18 - autocraft (before this you need to start mode 8 and put the rooms according to the instructions)
-// 12 - view advertising in the event (before that you need to start mode 8 and set the rooms according to the instructions)
-// 9 - viewing ads with a donkey (before that, you need to start mode 8 and put the rooms according to the instructions)
-//
-// 14 - launch of the clan war (before this, it is necessary to launch mode 8 and put the rooms according to the instructions)
-// 19 - campaign for a clan war
-//
-// 20 - start or stop the emulator
-//
-// 21 - send a random chat message
-//
-//	22 - открыть ежедневный сундук
-// 
-//	23 - забрать подарки
-//
-//	24 - попросить ресурсы
-//
-//	25 - купить яблоки за алмазы в магазине
-//
-//	26 - забрать почту
-
 // список всех режимов: (задается ниже в опции "program":)
 //	3 - сбор ресурсов в замке (облачка, желания, яблоки, золото, улучшение уровня жителей, происшествия) 
 // 	0 - арена
@@ -59,128 +20,108 @@
 //	18 - автокрафт (перед этим необходимо запустить режим 8 и поставить комнаты согласно инструкции)
 //	12 - просмотр рекламы в ивенте (перед этим необходимо запустить режим 8 и поставить комнаты согласно инструкции)
 //	9 - просмотр рекламы у осла (перед этим необходимо запустить режим 8 и поставить комнаты согласно инструкции)
-//
 //	14 - запуск клановой войны (перед этим необходимо запустить режим 8 и поставить комнаты согласно инструкции)
 //	19 - поход на клановую войну
-//
 //	20 - запустить или остановить эмулятор
-//
 //	21 - отправить случайное сообщение в чат
-//
 //	22 - открыть ежедневный сундук
-// 
 //	23 - забрать подарки
-//
 //	24 - попросить ресурсы
-//
 //	25 - купить яблоки за алмазы в магазине
-//
 //	26 - забрать почту
-//
 //  27 - купить предмет в портале
+// 	28 - добавить заклинания (перед этим необходимо запустить режим 8 и поставить комнаты согласно инструкции)
+// 	29 - изготовить заклинания (перед этим необходимо запустить режим 8 и поставить комнаты согласно инструкции)
+
+"const":
+{
+	// Сколько часов хранится запись в blacklist
+	"blacklist_hours": 72, 
+
+	// 1 - автообновления включены,
+	// 0 - автообновления выключены.
+	"auto_update_enable": 0, 
+	
+	
+	// Интервал, через который сканируется экран в мс
+	"pause": 500, 						
+	
+	// Сколько времени доступно на одно состо¤ние в мс.
+	"short_state_timeout": 10000, 	
+	"long_state_timeout": 200000,		
+	"arena_find_timeout": 600000,		
+	"recovery_state_timeout": 300000,	// 5 минут, потом уходим в ребут.
+	
+	
+	// Время на завершение и запуск эмулятора в мс. 
+	"emulator_stop_time": 60000, 
+	"emulator_start_time": 120000, 		
+},
 
 "global":
 	{
-		// settings for all modes:
 		// настройки для всех режимов:
 		
-										// turn off the recovery system
 		"disable_recovery": 0,			// выключить систему восстановления
 		
-										// page opening time in ms
 		"open_timeout": 3000,			// время открытия страницы в мс
 		
 		"start_program_pause": 5000,	// пауза перед запуском программы, для корректного сканирования количества ресурсов.
 		
-										// watch ads when there are few apples? 1 - yes, other values - no.
 		"advertising_apple": 1,			// смотреть рекламу когда мало яблок? 1 - да, остальные значения - нет.
 		
-										// watch ads if you lose the fight? 1 - yes, other values - no.
 		"advertising_battle": 1,		// смотреть рекламу если проиграли бой? 1 - да, остальные значения - нет.
 		
-											// how much to wait if you logged in from another device in ms. 300000 == 5 minutes.
 		"another_device_timeout": 600000, 	// сколько ждать, если зашли с другого устройства в мс. 300000 == 5 минут.
 		
-										// how long it takes to wait for an advertisement.
 		"advertising_timeout": 45000,	// сколько времени ждать рекламу.
-		
-										// type of event (if running). 0 - maps (scar, etc.), 1 - path (dragon, grave, etc. 3 branches)
-		"event_type": 0,				// тип ивента (если запущен). 0 - карты (шрум и т.д.), 1 - путь (дракон, грав и т.д. 3 ветки)
-		
 		
 		"battle_relic": 1,				// нажимать реликвию в бою? 1 - да, остальные значения - нет.
 		
 		"battle_portal_resurrection": 1,// нажимать воскрешение в бою в портале? 1 - да, остальные значения - нет.
+		
+		"battle_magic": 0,				// 0 - не использовать заклинание. [1 .. 9] - использовать заклинание нужного типа
+		
+		"battle_magic_health_less": 0,	// применяем заклинания, если наше здоровье меньше этого значения. диапазон значений: [0..100] в процентах.
 		//---------------------------------------------------------------------------
 		
-		// individual settings for individual modes:
-		// can be set here once or specify these settings in the desired mode.
 		// индивидуальные настройки для отдельных режимов:
 		// можно задать тут один раз или указать эти настройки в нужном режиме.
 		
 		//---------------------------------------------------------------------------
 		
-		// used in modes 1, 2, 4, 7.
 		// используется в режимах 1, 2, 4, 7.
-										// ignore incomplete hp message? yes - 1, no - other values
 		"ignore_warning_hp" : 0,		// игнорировать сообщение о неполном hp? да - 1, нет - остальные значения
 
 		//---------------------------------------------------------------------------
 		
-		// used in modes 1.
 		// используется в режимах 1.
-										// purchase for diamonds. yes - 1, no - other values
 		"event_buy": 0, 				// покупка за алмазы. да - 1, нет - остальные значения
-		
-										// ignore the warning that the location will be updated soon. yes - 1, no - other values.
 		"event_update_soon": 0, 		// игнорировать предупреждение, что локация скоро обновится. да - 1, нет - остальные значения.
 		
 		//---------------------------------------------------------------------------
 		
-		// used in modes 0.
 		// используется в режимах 0.
-										// arena algorithm.
-										// adaptive.chai - adaptive algorithm, we kill about a strong player and play 4 up, or play down, down, down, up, up.
-										// end_game.chai - algorithm for high arenas. down, up, up, up, up.
 										// алгоритм арены. 
 										// adaptive.chai - адаптивный алгоритм, убиваемся о сильного игрока и играем 4 вверх, или играем вниз, вниз, вниз, вверх, вверх.
 										// end_game.chai - алгоритм для высоких арен. вниз, вверх, вверх, вверх, вверх.
-		"algorithm_file": "standart.chai",								
-										
-										// operation mode. 0 - for apples, 1 - for tickets, 2 - for Apples, if run out - for tickets, 3 - for tickets, if run out - for Apples.
+		"algorithm_file": "standart.chai",													
 		"arena_ticket": 0, 				// режим работы. 0 - за яблоки, 1 - за билеты, 2 - за Яблоки, если кончаются - за билеты, 3 - за билеты, если кончаютсЯ - за Яблоки.
-		
-										// invite clan players at the end of the arena? 1 - yes, other values - no.
-		"arena_invite": 0,				// приглашать в конце арены игроков в клан? 1 - да, остальные значения - нет.		
-
-										// pick up the reward from the post office. yes - 1, no - other values
+		"arena_invite": 0,				// приглашать в конце арены игроков в клан? 1 - да, остальные значения - нет.	
 		"arena_check_mail": 1, 			// забирать награду с почты. да - 1, нет - остальные значения
-		
-										// statistics. 0 - not maintained, 1 - victory statistics, 2 - detailed statistics.
 		"arena_stats": 0,				// статистика. 0 - не ведется, 1 - статистика побед, 2 - подробная статистика.
-		
-										// multiplier of its power in the arena. the resulting power is used to calculate the attacked enemy. 
 		"arena_my_power_scale": 1.0,	// множитель своей мощности на арене. результирующая мощность используется для вычисления атакуемого противника. 
-		
 		"arena_ticket_buy": 0,			// покупать билеты за алмазы? 1 - да, остальные значения - нет.
 		//---------------------------------------------------------------------------
 		
-		// used in modes 4.
 		// используется в режимах 4.
-										// multiplier of its power when attacking opponents on the map. the resulting power is used to calculate the attacked enemy.
 		"enemy_my_power_scale": 1.0,	// множитель своей мощности при нападении на противников на карте. результирующая мощность используется для вычисления атакуемого противника. 
-		
-										// multiplier of its power when attacking opponents on the map. we attack if the enemy has more power than this value times our power.
 		"enemy_my_power_scale_min": 0.0,	// множитель своей мощности при нападении на противников на карте. нападаем, если у врага больше мощность чем это значение, умноженное на нашу мощность.
 		
 		//---------------------------------------------------------------------------
 		
-		// used in modes 2.
 		// используется в режимах 2.
-										// multiplier of its power in the portal. the resulting power is used to calculate the attacked enemy.
 		"portal_my_power_scale": 1.0,	// множитель своей мощности в портале. результирующая мощность используется для вычисления атакуемого противника. 
-		
-										// buying apples for diamonds. yes - 1, no - other values
 		"portal_buy": 0,				// покупка яблок за алмазы. да - 1, нет - остальные значения
 		
 		
@@ -196,54 +137,34 @@
 										// 6 - x3 души
 		//---------------------------------------------------------------------------
 		
-		// used in modes 5.
 		// используется в режимах 5.
-										// minimum pause time in ms.
 		"antiban_pause_time_min": 3000,	// минимальное время паузы в мс.
-		
-										// maximum pause time in ms. a pause is selected randomly between these values.
 		"antiban_pause_time_max": 5000,	// максимальное время паузы в мс. пауза выбирается случайная, между этими значениями.
 		
 		//---------------------------------------------------------------------------
 		
-		// used in modes 13.
 		// используется в режимах 13.
-										// pass the bay for apples? yes - 1, no - other values
 		"bay_apple": 0,					// проходить бухту за яблоки? да - 1, нет - остальные значения
-		
-										// pass the bay for diamonds? yes - 1, no - other values
 		"bay_diamond": 0,				// проходить бухту за алмазы? да - 1, нет - остальные значения		
 		
 		//---------------------------------------------------------------------------
 		
-		// used in modes 15.
 		// используется в режимах 15.
-										// how many times to scroll the friends page
 		"friends_scroll": 4,			// сколько раз прокручивать страницу друзей
 		
 		// используются в режиме 21
 		//---------------------------------------------------------------------------
-										// if specified, writes this text, otherwise it writes a random message from bin/messages.txt
 		"chat_message": "message",		// текст сообщения в чат
-	
 		"chat_global": 0,				// 1 - переключиться в глобальный чат. не переключаться - остальные значения.
 		
 		
 		// используются в режиме 24
 		//---------------------------------------------------------------------------
-		
 		"request_type": 0,				// 0 - яблоки, 1 - золото
 	},
 	
 "objects":
 [
-	// This section defines the bot program.
-	// You can add as many blocks as you like in any order, two parameters are required:
-	// "repeat": 0, sets the number of repetitions of the specified block. If set to 0, the block is off.
-	// "program": 13, sets the operation mode of the specified block.
-	// in each block, you can specify any additional parameters listed in the block above "global"
-	// This section is always executed in a circle.
-	
 	// В данном разделе задается программа бота.
 	// Можно добавить сколько угодно блоков в любом порядке, обязательных два параметра:
 	// "repeat": 0,	задает количество повторения указанного блока. Если задано 0, блок выключен.
