@@ -28,12 +28,10 @@
 
 def PrintPowerData(data)
 {
-	print("++++++++++++++++++++++")
 	for (var i = 0; i < data.size(); ++i) 
 	{
-		print(data[i].pos.to_string() + " " + data[i].is_me.to_string() + " " + data[i].my_power.to_string() + " " + data[i].other_power.to_string() + " " + data[i].is_available.to_string() + " " + data[i].battle_state.to_string() + " " + data[i].blacklist_count.to_string())
+		log_print(data[i].pos.to_string() + " " + data[i].is_me.to_string() + " " + data[i].my_power.to_string() + " " + data[i].other_power.to_string() + " " + data[i].is_available.to_string() + " " + data[i].battle_state.to_string() + " " + data[i].blacklist_count.to_string())
 	}
-	print("----------------------")
 }
 
 def TestSetInputPhaseOne()
@@ -552,9 +550,9 @@ def main(power_data, phase)
 //print(pos)
 
 PrintPowerData(power_data)
-print(phase)
+//print(phase)
 
 var out_pos = main(power_data, phase)
 SetPosition(out_pos)
-print(out_pos)
+log_print("result pos: " + out_pos.to_string())
 
