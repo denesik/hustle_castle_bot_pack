@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-11-28 21:38+0300\n"
+"PO-Revision-Date: 2019-11-28 21:44+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ../../src/editor\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: EditorAdv.cpp:13 EditorFrame.cpp:64
+msgid "Arena"
+msgstr "Arena_"
+
+#: EditorAdv.cpp:18 EditorFrame.cpp:67
+msgid "Portal"
+msgstr ""
+
+#: EditorAdv.cpp:23
+msgid "Daily quests"
+msgstr ""
+
+#: EditorAdv.cpp:28
+msgid "Adv chest"
+msgstr ""
+
+#: EditorAdv.cpp:33 EditorFrame.cpp:71
+msgid "Event"
+msgstr ""
+
+#: EditorAdv.cpp:38
+msgid "Donkey"
+msgstr ""
+
+#: EditorAdv.cpp:43
+msgid "Train room"
+msgstr ""
+
+#: EditorAdv.cpp:48
+msgid "Few apples"
+msgstr ""
+
+#: EditorArena.cpp:16
+msgid "Algorithm:"
+msgstr ""
+
+#: EditorArena.cpp:40
+msgid "Mode:"
+msgstr ""
+
+#: EditorArena.cpp:46 EditorResource.cpp:31
+msgid "Apple"
+msgstr ""
+
+#: EditorArena.cpp:47
+msgid "Ticket"
+msgstr ""
+
+#: EditorArena.cpp:48
+msgid "Apple, ticket"
+msgstr ""
+
+#: EditorArena.cpp:49
+msgid "Ticket, apple"
+msgstr ""
+
+#: EditorArena.cpp:59
+msgid "Invite to the clan"
+msgstr ""
+
+#: EditorArena.cpp:64
+msgid "Collect mail"
+msgstr ""
+
+#: EditorArena.cpp:72
+msgid "Statistic:"
+msgstr ""
+
+#: EditorArena.cpp:78
+msgid "None"
+msgstr ""
+
+#: EditorArena.cpp:79
+msgid "Abridged"
+msgstr ""
+
+#: EditorArena.cpp:80
+msgid "Full"
+msgstr ""
+
+#: EditorArena.cpp:93 EditorPortal.cpp:15
+msgid "Power scale:"
+msgstr ""
+
+#: EditorArena.cpp:108
+msgid "Buy tickets for diamonds"
+msgstr ""
+
+#: EditorBay.cpp:13
+msgid "For apples"
+msgstr ""
+
+#: EditorBay.cpp:18
+msgid "For diamonds"
+msgstr ""
+
+#: EditorBay.cpp:23 EditorEnemy.cpp:50 EditorEvent.cpp:18 EditorInvasion.cpp:18
+#: EditorPortal.cpp:34
+msgid "Use relic"
+msgstr ""
+
+#: EditorBay.cpp:30 EditorEnemy.cpp:57 EditorEvent.cpp:25 EditorInvasion.cpp:25
+#: EditorPortal.cpp:41
+msgid "Use spells if health is lower (%)"
+msgstr ""
+
+#: EditorConditions.cpp:10
+msgid "Execution conditions:"
+msgstr ""
+
+#: EditorConditions.cpp:23
+msgid "Execution time:"
+msgstr ""
+
+#: EditorConditions.cpp:31
+msgid "From"
+msgstr ""
+
+#: EditorConditions.cpp:37 EditorConditions.cpp:72
+msgid "Everyday"
+msgstr ""
+
+#: EditorConditions.cpp:38 EditorConditions.cpp:73
+msgid "Monday"
+msgstr ""
+
+#: EditorConditions.cpp:39 EditorConditions.cpp:74
+msgid "Tuesday"
+msgstr ""
+
+#: EditorConditions.cpp:40 EditorConditions.cpp:75
+msgid "Wednesday"
+msgstr ""
+
+#: EditorConditions.cpp:41 EditorConditions.cpp:76
+msgid "Thursday"
+msgstr ""
+
+#: EditorConditions.cpp:42 EditorConditions.cpp:77
+msgid "Friday"
+msgstr ""
+
+#: EditorConditions.cpp:43 EditorConditions.cpp:78
+msgid "Saturday"
+msgstr ""
+
+#: EditorConditions.cpp:44 EditorConditions.cpp:79
+msgid "Sunday"
+msgstr ""
+
+#: EditorConditions.cpp:66
+msgid "To"
+msgstr ""
+
+#: EditorConditions.cpp:101
+msgid "Number of apples:"
+msgstr ""
+
+#: EditorConditions.cpp:110 EditorConditions.cpp:143 EditorConditions.cpp:176
+msgid "Less"
+msgstr ""
+
+#: EditorConditions.cpp:111 EditorConditions.cpp:144 EditorConditions.cpp:177
+msgid "More"
+msgstr ""
+
+#: EditorConditions.cpp:134
+msgid "Number of gold:"
+msgstr ""
+
+#: EditorConditions.cpp:167
+msgid "Number of mana:"
+msgstr ""
+
+#: EditorConditions.cpp:200
+msgid "Probability of execution:"
+msgstr ""
+
+#: EditorEnemy.cpp:15
+msgid "Upper power scale:"
+msgstr ""
+
+#: EditorEnemy.cpp:31
+msgid "Lower power scale:"
+msgstr ""
+
+#: EditorEnemy.cpp:45 EditorEvent.cpp:13 EditorInvasion.cpp:13
+#: EditorPortal.cpp:29
+msgid "Ignore warning HP"
+msgstr ""
+
+#: EditorEnemy.cpp:69
+msgid "Watch ad on defeat"
+msgstr ""
+
+#: EditorEvent.cpp:37
+msgid "Pass for diamonds"
+msgstr ""
+
+#: EditorFrame.cpp:24
+msgid "No update required"
+msgstr ""
+
+#: EditorFrame.cpp:29
+msgid "Update"
+msgstr "tralala"
+
+#: EditorFrame.cpp:40
+msgid "Language"
+msgstr ""
+
+#: EditorFrame.cpp:63
+msgid "Settings"
+msgstr ""
+
+#: EditorFrame.cpp:65
+msgid "Enemy"
+msgstr ""
+
+#: EditorFrame.cpp:66
+msgid "Invasion"
+msgstr ""
+
+#: EditorFrame.cpp:68
+msgid "Bay"
+msgstr ""
+
+#: EditorFrame.cpp:69
+msgid "Advertising"
+msgstr ""
+
+#: EditorFrame.cpp:70
+msgid "Resources"
+msgstr ""
+
+#: EditorFrame.cpp:72
+msgid "Other"
+msgstr ""
+
+#: EditorFrame.cpp:73
+msgid "Log"
+msgstr ""
+
+#: EditorFrame.cpp:84
+msgid "Disabled"
+msgstr ""
+
+#: EditorFrame.cpp:89
+msgid "Emulator ID:"
+msgstr ""
+
+#: EditorFrame.cpp:99
+msgid "Emulator name:"
+msgstr ""
+
+#: EditorFrame.cpp:109
+msgid "Start"
+msgstr ""
+
+#: EditorFrame.cpp:131
+msgid "Select language"
+msgstr ""
+
+#: EditorOther.cpp:13
+msgid "Start CW"
+msgstr ""
+
+#: EditorOther.cpp:18
+msgid "Go to CW"
+msgstr ""
+
+#: EditorPortal.cpp:53
+msgid "Use resurrection"
+msgstr ""
+
+#: EditorPortal.cpp:58
+msgid "Buy apples"
+msgstr ""
+
+#: EditorProgram.cpp:14
+msgid "Basic settings:"
+msgstr ""
+
+#: EditorProgram.cpp:20
+msgid "Enable"
+msgstr ""
+
+#: EditorProgram.cpp:26
+msgid "Collect resources"
+msgstr ""
+
+#: EditorProgram.cpp:42
+msgid "Pause at the end (minutes)"
+msgstr ""
+
+#: EditorResource.cpp:13
+msgid "Send gifts"
+msgstr ""
+
+#: EditorResource.cpp:18
+msgid "Take gifts"
+msgstr ""
+
+#: EditorResource.cpp:25
+msgid "Request resources"
+msgstr ""
+
+#: EditorResource.cpp:32
+msgid "Gold"
+msgstr ""
+
+#: EditorResource.cpp:33
+msgid "Mana"
+msgstr ""
+
+#: EditorResource.cpp:41
+msgid "Daily chest"
+msgstr ""
+
+#: LangSelector.cpp:47
+msgid "ok"
+msgstr ""

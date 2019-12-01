@@ -1,0 +1,339 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-11-28 21:38+0300\n"
+"PO-Revision-Date: 2019-11-30 01:23+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ../../src/editor\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: EditorAdv.cpp:13 EditorFrame.cpp:64
+msgid "Arena"
+msgstr "Арена"
+
+#: EditorAdv.cpp:18 EditorFrame.cpp:67
+msgid "Portal"
+msgstr "Портал"
+
+#: EditorAdv.cpp:23
+msgid "Daily quests"
+msgstr "Ежедневные задания"
+
+#: EditorAdv.cpp:28
+msgid "Adv chest"
+msgstr "Рекламный сундук"
+
+#: EditorAdv.cpp:33 EditorFrame.cpp:71
+msgid "Event"
+msgstr "Ивент"
+
+#: EditorAdv.cpp:38
+msgid "Donkey"
+msgstr "Осел"
+
+#: EditorAdv.cpp:43
+msgid "Train room"
+msgstr "Тренировочная"
+
+#: EditorAdv.cpp:48
+msgid "Few apples"
+msgstr "Мало яблок"
+
+#: EditorArena.cpp:16
+msgid "Algorithm:"
+msgstr "Алгоритм:"
+
+#: EditorArena.cpp:40
+msgid "Mode:"
+msgstr "Режим:"
+
+#: EditorArena.cpp:46 EditorResource.cpp:31
+msgid "Apple"
+msgstr "Яблоки"
+
+#: EditorArena.cpp:47
+msgid "Ticket"
+msgstr "Билеты"
+
+#: EditorArena.cpp:48
+msgid "Apple, ticket"
+msgstr "Яблоки, билеты"
+
+#: EditorArena.cpp:49
+msgid "Ticket, apple"
+msgstr "Билеты, яблоки"
+
+#: EditorArena.cpp:59
+msgid "Invite to the clan"
+msgstr "Приглашать в клан"
+
+#: EditorArena.cpp:64
+msgid "Collect mail"
+msgstr "Забирать почту"
+
+#: EditorArena.cpp:72
+msgid "Statistic:"
+msgstr "Статистика:"
+
+#: EditorArena.cpp:78
+msgid "None"
+msgstr "Нет"
+
+#: EditorArena.cpp:79
+msgid "Abridged"
+msgstr "Краткая"
+
+#: EditorArena.cpp:80
+msgid "Full"
+msgstr "Полная"
+
+#: EditorArena.cpp:93 EditorPortal.cpp:15
+msgid "Power scale:"
+msgstr "Множитель мощности:"
+
+#: EditorArena.cpp:108
+msgid "Buy tickets for diamonds"
+msgstr "Покупать билеты за алмазы"
+
+#: EditorBay.cpp:13
+msgid "For apples"
+msgstr "За яблоки"
+
+#: EditorBay.cpp:18
+msgid "For diamonds"
+msgstr "За алмазы"
+
+#: EditorBay.cpp:23 EditorEnemy.cpp:50 EditorEvent.cpp:18 EditorInvasion.cpp:18
+#: EditorPortal.cpp:34
+msgid "Use relic"
+msgstr "Использовать реликвию"
+
+#: EditorBay.cpp:30 EditorEnemy.cpp:57 EditorEvent.cpp:25 EditorInvasion.cpp:25
+#: EditorPortal.cpp:41
+msgid "Use spells if health is lower (%)"
+msgstr "Использовать заклинания, если здоровье меньше (%)"
+
+#: EditorConditions.cpp:10
+msgid "Execution conditions:"
+msgstr "Условия выполнения:"
+
+#: EditorConditions.cpp:23
+msgid "Execution time:"
+msgstr "Время выполнения:"
+
+#: EditorConditions.cpp:31
+msgid "From"
+msgstr "С"
+
+#: EditorConditions.cpp:37 EditorConditions.cpp:72
+msgid "Everyday"
+msgstr "Каждый день"
+
+#: EditorConditions.cpp:38 EditorConditions.cpp:73
+msgid "Monday"
+msgstr "Понедельник"
+
+#: EditorConditions.cpp:39 EditorConditions.cpp:74
+msgid "Tuesday"
+msgstr "Вторник"
+
+#: EditorConditions.cpp:40 EditorConditions.cpp:75
+msgid "Wednesday"
+msgstr "Среда"
+
+#: EditorConditions.cpp:41 EditorConditions.cpp:76
+msgid "Thursday"
+msgstr "Четверг"
+
+#: EditorConditions.cpp:42 EditorConditions.cpp:77
+msgid "Friday"
+msgstr "Пятница"
+
+#: EditorConditions.cpp:43 EditorConditions.cpp:78
+msgid "Saturday"
+msgstr "Суббота"
+
+#: EditorConditions.cpp:44 EditorConditions.cpp:79
+msgid "Sunday"
+msgstr "Воскресенье"
+
+#: EditorConditions.cpp:66
+msgid "To"
+msgstr "До"
+
+#: EditorConditions.cpp:101
+msgid "Number of apples:"
+msgstr "Количество яблок:"
+
+#: EditorConditions.cpp:110 EditorConditions.cpp:143 EditorConditions.cpp:176
+msgid "Less"
+msgstr "Меньше"
+
+#: EditorConditions.cpp:111 EditorConditions.cpp:144 EditorConditions.cpp:177
+msgid "More"
+msgstr "Больше"
+
+#: EditorConditions.cpp:134
+msgid "Number of gold:"
+msgstr "Количество золота:"
+
+#: EditorConditions.cpp:167
+msgid "Number of mana:"
+msgstr "Количество маны:"
+
+#: EditorConditions.cpp:200
+msgid "Probability of execution:"
+msgstr "Вероятность выполнения:"
+
+#: EditorEnemy.cpp:15
+msgid "Upper power scale:"
+msgstr "Верхний множитель мощности:"
+
+#: EditorEnemy.cpp:31
+msgid "Lower power scale:"
+msgstr "Нижний множитель мощности:"
+
+#: EditorEnemy.cpp:45 EditorEvent.cpp:13 EditorInvasion.cpp:13
+#: EditorPortal.cpp:29
+msgid "Ignore warning HP"
+msgstr "Игнорировать предупреждение о неполном здоровье"
+
+#: EditorEnemy.cpp:69
+msgid "Watch ad on defeat"
+msgstr "Смотреть рекламу при поражении"
+
+#: EditorEvent.cpp:37
+msgid "Pass for diamonds"
+msgstr "Проход за алмазы"
+
+#: EditorFrame.cpp:24
+msgid "No update required"
+msgstr "Обновление не требуется"
+
+#: EditorFrame.cpp:29
+msgid "Update"
+msgstr "Обновить"
+
+#: EditorFrame.cpp:40
+msgid "Language"
+msgstr "Язык"
+
+#: EditorFrame.cpp:63
+msgid "Settings"
+msgstr "Настройки"
+
+#: EditorFrame.cpp:65
+msgid "Enemy"
+msgstr "Враги"
+
+#: EditorFrame.cpp:66
+msgid "Invasion"
+msgstr "Вторжения"
+
+#: EditorFrame.cpp:68
+msgid "Bay"
+msgstr "Бухта"
+
+#: EditorFrame.cpp:69
+msgid "Advertising"
+msgstr "Реклама"
+
+#: EditorFrame.cpp:70
+msgid "Resources"
+msgstr "Ресурсы"
+
+#: EditorFrame.cpp:72
+msgid "Other"
+msgstr "Другое"
+
+#: EditorFrame.cpp:73
+msgid "Log"
+msgstr "Лог"
+
+#: EditorFrame.cpp:84
+msgid "Disabled"
+msgstr "Выключено"
+
+#: EditorFrame.cpp:89
+msgid "Emulator ID:"
+msgstr "ID эмулятора:"
+
+#: EditorFrame.cpp:99
+msgid "Emulator name:"
+msgstr "Название эмулятора:"
+
+#: EditorFrame.cpp:109
+msgid "Start"
+msgstr "Старт"
+
+#: EditorFrame.cpp:131
+msgid "Select language"
+msgstr "Выбрать язык"
+
+#: EditorOther.cpp:13
+msgid "Start CW"
+msgstr "Запустить КВ"
+
+#: EditorOther.cpp:18
+msgid "Go to CW"
+msgstr "Сходить на КВ"
+
+#: EditorPortal.cpp:53
+msgid "Use resurrection"
+msgstr "Использовать воскрешение"
+
+#: EditorPortal.cpp:58
+msgid "Buy apples"
+msgstr "Купить яблоки"
+
+#: EditorProgram.cpp:14
+msgid "Basic settings:"
+msgstr "Базовые настройки:"
+
+#: EditorProgram.cpp:20
+msgid "Enable"
+msgstr "Включить"
+
+#: EditorProgram.cpp:26
+msgid "Collect resources"
+msgstr "Собирать ресурсы"
+
+#: EditorProgram.cpp:42
+msgid "Pause at the end (minutes)"
+msgstr "Пауза в конце (минуты)"
+
+#: EditorResource.cpp:13
+msgid "Send gifts"
+msgstr "Отправлять подарки"
+
+#: EditorResource.cpp:18
+msgid "Take gifts"
+msgstr "Забрать подарки"
+
+#: EditorResource.cpp:25
+msgid "Request resources"
+msgstr "Попросить ресурсы"
+
+#: EditorResource.cpp:32
+msgid "Gold"
+msgstr "Золото"
+
+#: EditorResource.cpp:33
+msgid "Mana"
+msgstr "Мана"
+
+#: EditorResource.cpp:41
+msgid "Daily chest"
+msgstr "Ежедневный сундук"
+
+#: LangSelector.cpp:47
+msgid "ok"
+msgstr "ок"

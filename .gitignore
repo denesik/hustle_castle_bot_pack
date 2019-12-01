@@ -24,3 +24,5 @@ config.json
 /Bluestacks_netlog.txt
 /set_token.cmd
 *.blacklist
+/config_editor.txt
+/editor.cfg
