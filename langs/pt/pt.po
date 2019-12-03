@@ -1,0 +1,457 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-12-02 06:25+0300\n"
+"PO-Revision-Date: 2019-12-03 07:26+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ../../src/editor\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: EditorAdv.cpp:14
+msgid "advertising_apple"
+msgstr "Veja anúncios se ficar sem maçãs"
+
+#: EditorAdv.cpp:20
+msgid "advertising_adv_chest"
+msgstr "Veja anúncios no baú de anúncios"
+
+#: EditorAdv.cpp:26
+msgid "advertising_daily_quests"
+msgstr "Veja anúncios em tarefas diárias"
+
+#: EditorAdv.cpp:32
+msgid "advertising_arena"
+msgstr "Veja anúncios na arena"
+
+#: EditorAdv.cpp:38
+msgid "advertising_portal"
+msgstr "Veja anúncios no portal"
+
+#: EditorAdv.cpp:44
+msgid "advertising_train_room"
+msgstr "Veja anúncio de treinamento"
+
+#: EditorAdv.cpp:50
+msgid "advertising_event"
+msgstr "Veja anúncios no evento"
+
+#: EditorAdv.cpp:56
+msgid "advertising_donkey"
+msgstr "Veja anúncios de burro"
+
+#: EditorApp.cpp:87
+msgid "bot_name"
+msgstr "Hustle Castle Bot"
+
+#: EditorArena.cpp:15 EditorBay.cpp:14 EditorEnemy.cpp:14 EditorEvent.cpp:13
+#: EditorInvasion.cpp:14 EditorPortal.cpp:14
+msgid "enable"
+msgstr "Ativar"
+
+#: EditorArena.cpp:25
+msgid "algorithm_file"
+msgstr "Algoritmo"
+
+#: EditorArena.cpp:48
+msgid "arena_ticket"
+msgstr "Modo"
+
+#: EditorArena.cpp:54
+msgid "arena_ticket_0"
+msgstr "Para maçãs"
+
+#: EditorArena.cpp:55
+msgid "arena_ticket_1"
+msgstr "Para bilhetes"
+
+#: EditorArena.cpp:56
+msgid "arena_ticket_2"
+msgstr "Maçãs, bilhetes"
+
+#: EditorArena.cpp:57
+msgid "arena_ticket_3"
+msgstr "Bilhetes, maçãs"
+
+#: EditorArena.cpp:69
+msgid "arena_my_power_scale"
+msgstr "Multiplicador de potência"
+
+#: EditorArena.cpp:84
+msgid "arena_check_mail"
+msgstr "Pegar correio"
+
+#: EditorArena.cpp:91
+msgid "arena_invite"
+msgstr "Convidar para o clã"
+
+#: EditorArena.cpp:100
+msgid "arena_stats"
+msgstr "Estatísticas"
+
+#: EditorArena.cpp:106
+msgid "arena_stats_0"
+msgstr "Desativado"
+
+#: EditorArena.cpp:107
+msgid "arena_stats_1"
+msgstr "Resumo"
+
+#: EditorArena.cpp:108
+msgid "arena_stats_2"
+msgstr "Completo"
+
+#: EditorArena.cpp:119
+msgid "arena_ticket_buy"
+msgstr "Comprar bilhetes com diamantes"
+
+#: EditorBay.cpp:23 EditorEnemy.cpp:57 EditorEvent.cpp:22 EditorInvasion.cpp:23
+#: EditorPortal.cpp:40
+msgid "battle_magic_health_less"
+msgstr "Use feitiços se a saúde for menor que"
+
+#: EditorBay.cpp:36 EditorEnemy.cpp:70 EditorEvent.cpp:34 EditorInvasion.cpp:36
+#: EditorPortal.cpp:53
+msgid "battle_relic"
+msgstr "Use relíquia"
+
+#: EditorBay.cpp:43
+msgid "bay_apple"
+msgstr "Passe para maçãs"
+
+#: EditorBay.cpp:49
+msgid "bay_diamond"
+msgstr "Passe para diamantes"
+
+#: EditorConditions.cpp:11
+msgid "execution_conditions"
+msgstr "Condições de execução"
+
+#: EditorConditions.cpp:24
+msgid "conditions_time"
+msgstr "Tempo de execução"
+
+#: EditorConditions.cpp:33
+msgid "conditions_time_begin"
+msgstr "С"
+
+#: EditorConditions.cpp:39 EditorConditions.cpp:52 EditorConditions.cpp:55
+#: EditorConditions.cpp:58 EditorConditions.cpp:102 EditorConditions.cpp:355
+#: EditorConditions.cpp:426
+msgid "everyday"
+msgstr "Todos os dias"
+
+#: EditorConditions.cpp:40 EditorConditions.cpp:63 EditorConditions.cpp:335
+msgid "monday"
+msgstr "Segunda-feira"
+
+#: EditorConditions.cpp:41 EditorConditions.cpp:64 EditorConditions.cpp:336
+msgid "tuesday"
+msgstr "Terça-feira"
+
+#: EditorConditions.cpp:42 EditorConditions.cpp:65 EditorConditions.cpp:337
+msgid "wednesday"
+msgstr "Quarta-feira"
+
+#: EditorConditions.cpp:43 EditorConditions.cpp:66 EditorConditions.cpp:338
+msgid "thursday"
+msgstr "Quinta-feira"
+
+#: EditorConditions.cpp:44 EditorConditions.cpp:67 EditorConditions.cpp:339
+msgid "friday"
+msgstr "Sexta-feira"
+
+#: EditorConditions.cpp:45 EditorConditions.cpp:68 EditorConditions.cpp:340
+msgid "saturday"
+msgstr "Sábado"
+
+#: EditorConditions.cpp:46 EditorConditions.cpp:69 EditorConditions.cpp:341
+msgid "sunday"
+msgstr "Domingo"
+
+#: EditorConditions.cpp:96
+msgid "conditions_time_end"
+msgstr "Por"
+
+#: EditorConditions.cpp:128
+msgid "conditions_apple"
+msgstr "maçãs"
+
+#: EditorConditions.cpp:138 EditorConditions.cpp:174 EditorConditions.cpp:210
+#: EditorConditions.cpp:277 EditorConditions.cpp:293 EditorConditions.cpp:309
+#: EditorConditions.cpp:379 EditorConditions.cpp:392 EditorConditions.cpp:405
+msgid "conditions_<"
+msgstr "Menos"
+
+#: EditorConditions.cpp:139 EditorConditions.cpp:175 EditorConditions.cpp:211
+#: EditorConditions.cpp:279 EditorConditions.cpp:295 EditorConditions.cpp:311
+#: EditorConditions.cpp:381 EditorConditions.cpp:394 EditorConditions.cpp:407
+msgid "conditions_>"
+msgstr "Mais"
+
+#: EditorConditions.cpp:164
+msgid "conditions_gold"
+msgstr "Ouro"
+
+#: EditorConditions.cpp:200
+msgid "conditions_mana"
+msgstr "Mana"
+
+#: EditorConditions.cpp:236
+msgid "conditions_probability"
+msgstr "Probabilidade"
+
+#: EditorEnemy.cpp:23
+msgid "enemy_my_power_scale"
+msgstr "Multiplicador de potência superior"
+
+#: EditorEnemy.cpp:40
+msgid "enemy_my_power_scale_min"
+msgstr "Multiplicador de menor potência"
+
+#: EditorEnemy.cpp:77 EditorEvent.cpp:39 EditorInvasion.cpp:43
+#: EditorPortal.cpp:67
+msgid "ignore_warning_hp"
+msgstr "Ignorar o aviso sobre a saúde incompleta"
+
+#: EditorEnemy.cpp:83
+msgid "advertising_battle"
+msgstr "Veja os comerciais se você perder a luta"
+
+#: EditorEvent.cpp:44
+msgid "event_buy"
+msgstr "Passe um cartão para diamantes"
+
+#: EditorFrame.cpp:28
+msgid "update_not_required"
+msgstr "Atualização não necessária"
+
+#: EditorFrame.cpp:28
+msgid "update_available"
+msgstr "Atualização necessária"
+
+#: EditorFrame.cpp:33
+msgid "update"
+msgstr "Atualização"
+
+#: EditorFrame.cpp:44
+msgid "language"
+msgstr "Linguagem"
+
+#: EditorFrame.cpp:67
+msgid "arena"
+msgstr "Arena"
+
+#: EditorFrame.cpp:68
+msgid "invasion"
+msgstr "Invasão"
+
+#: EditorFrame.cpp:69
+msgid "enemy"
+msgstr "Inimigos"
+
+#: EditorFrame.cpp:70
+msgid "portal"
+msgstr "O portal"
+
+#: EditorFrame.cpp:71
+msgid "bay"
+msgstr "Baía"
+
+#: EditorFrame.cpp:72
+msgid "advertising"
+msgstr "Publicidade"
+
+#: EditorFrame.cpp:73
+msgid "resource"
+msgstr "Recursos"
+
+#: EditorFrame.cpp:74
+msgid "event"
+msgstr "Evento"
+
+#: EditorFrame.cpp:75
+msgid "other"
+msgstr "Outros"
+
+#: EditorFrame.cpp:76 EditorProgram.cpp:16 EditorSettings.cpp:9
+msgid "settings"
+msgstr "Configurações"
+
+#: EditorFrame.cpp:77
+msgid "log"
+msgstr "Log"
+
+#: EditorFrame.cpp:93
+msgid "status_launched"
+msgstr "Executando"
+
+#: EditorFrame.cpp:93
+msgid "status_stopped"
+msgstr "Está parado"
+
+#: EditorFrame.cpp:98
+msgid "emulator_id"
+msgstr "Id emulador:"
+
+#: EditorFrame.cpp:109
+msgid "emulator_name"
+msgstr "Nome do Emulador:"
+
+#: EditorFrame.cpp:120
+msgid "start"
+msgstr "Iniciar"
+
+#: EditorFrame.cpp:194
+msgid "Select language"
+msgstr "Selecionar idioma"
+
+#: EditorOther.cpp:13
+msgid "program_start_cw"
+msgstr "Comece uma guerra de clãs"
+
+#: EditorOther.cpp:18
+msgid "program_goto_cw"
+msgstr "Vá para a guerra do clã"
+
+#: EditorPortal.cpp:23
+msgid "portal_my_power_scale"
+msgstr "Multiplicador de poder"
+
+#: EditorPortal.cpp:60
+msgid "battle_portal_resurrection"
+msgstr "Use ressurreição"
+
+#: EditorPortal.cpp:73
+msgid "portal_buy"
+msgstr "Compre maçãs com diamantes"
+
+#: EditorProgram.cpp:31
+msgid "program_collect"
+msgstr "Coletar recursos após concluir o modo"
+
+#: EditorProgram.cpp:39
+msgid "program_pause"
+msgstr "Pausa após a execução (minutos)"
+
+#: EditorResource.cpp:16
+msgid "request_type"
+msgstr "Pedir recursos"
+
+#: EditorResource.cpp:23
+msgid "request_type_0"
+msgstr "Maçãs"
+
+#: EditorResource.cpp:24
+msgid "request_type_1"
+msgstr "Ouro"
+
+#: EditorResource.cpp:25
+msgid "request_type_2"
+msgstr "Mana"
+
+#: EditorResource.cpp:34
+msgid "program_send_gift"
+msgstr "Enviar presentes"
+
+#: EditorResource.cpp:40
+msgid "program_take_gift"
+msgstr "Pegar presentes"
+
+#: EditorResource.cpp:46
+msgid "program_daily_chest"
+msgstr "Abrir o baú diário"
+
+#: EditorSettings.cpp:19
+msgid "blacklist_hours"
+msgstr ""
+
+#: EditorSettings.cpp:34
+msgid "pause"
+msgstr ""
+
+#: EditorSettings.cpp:49
+msgid "short_state_timeout"
+msgstr ""
+
+#: EditorSettings.cpp:64
+msgid "long_state_timeout"
+msgstr ""
+
+#: EditorSettings.cpp:79
+msgid "arena_find_timeout"
+msgstr ""
+
+#: EditorSettings.cpp:94
+msgid "recovery_state_timeout"
+msgstr ""
+
+#: EditorSettings.cpp:109
+msgid "emulator_stop_time"
+msgstr ""
+
+#: EditorSettings.cpp:124
+msgid "emulator_start_time"
+msgstr ""
+
+#: EditorSettings.cpp:140
+msgid "disable_recovery"
+msgstr ""
+
+#: EditorSettings.cpp:155
+msgid "open_timeout"
+msgstr ""
+
+#: EditorSettings.cpp:170
+msgid "start_program_pause"
+msgstr ""
+
+#: EditorSettings.cpp:185
+msgid "another_device_timeout"
+msgstr ""
+
+#: EditorSettings.cpp:200
+msgid "advertising_timeout"
+msgstr ""
+
+#: LangSelector.cpp:48
+msgid "ok"
+msgstr "ок"
+
+msgid "note_"
+msgstr " "
+
+msgid "note_arena"
+msgstr " "
+
+msgid "note_invasion"
+msgstr " "
+
+msgid "note_enemy"
+msgstr " "
+
+msgid "note_portal"
+msgstr " "
+
+msgid "note_bay"
+msgstr " "
+
+msgid "note_advertising"
+msgstr " "
+
+msgid "note_resource"
+msgstr " "
+
+msgid "note_event"
+msgstr " "
+
+msgid "note_other"
+msgstr " "
