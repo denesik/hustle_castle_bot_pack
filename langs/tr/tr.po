@@ -1,52 +1,62 @@
 msgid ""
 msgstr ""
+"Proje-ID Sürümü: \n"
+"POT-oluşturma-Tarih: 2019-12-02 06:25+0300\n"
+"PO Revizyon Tarihi: 2019-12-02 06:43+0300\n"
+"Son Çevirmen: \n"
+"Dil Ekibi: \n"
+"Dil: ru\n"
+"MIME sürümü: 1.0\n"
+"İçerik Türü: text/plain; charset=UTF-8\n"
+"İçerik Aktarımı-Kodlama: 8bit\n"
+"X-Jeneratör: Poedit 2.2.4\n"
+"X-Poedit-Basepath: ../../src/editor\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: _\n"
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-12-02 06:25+0300\n"
-"PO-Revision-Date: 2019-12-03 12:14+0300\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
 "X-Generator: Poedit 2.2.4\n"
-"X-Poedit-Basepath: ../../src/editor\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
-"X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: EditorAdv.cpp:14
 msgid "advertising_apple"
-msgstr "Просмотр рекламы, если закончились яблоки"
+msgstr "Elma biterse reklamları görüntüleme"
 
 #: EditorAdv.cpp:20
 msgid "advertising_adv_chest"
-msgstr "Просмотр рекламы в рекламном сундуке"
+msgstr "Reklam göğsünde reklam görüntüleme"
 
 #: EditorAdv.cpp:26
 msgid "advertising_daily_quests"
-msgstr "Просмотр рекламы в ежедневных заданиях"
+msgstr "Günlük işlerdeki reklamları görüntüleme"
 
 #: EditorAdv.cpp:32
 msgid "advertising_arena"
-msgstr "Просмотр рекламы на арене"
+msgstr "Arenada reklam görüntüleme"
 
 #: EditorAdv.cpp:38
 msgid "advertising_portal"
-msgstr "Просмотр рекламы в портале"
+msgstr "Portalda reklamları görüntüleme"
 
 #: EditorAdv.cpp:44
 msgid "advertising_train_room"
-msgstr "Просмотр рекламы в тренировочной"
+msgstr "Eğitim odasında reklam görüntüleme"
 
 #: EditorAdv.cpp:50
 msgid "advertising_event"
-msgstr "Просмотр рекламы в ивенте"
+msgstr "Etkinlik reklamlarını görüntüleme"
 
 #: EditorAdv.cpp:56
 msgid "advertising_donkey"
-msgstr "Просмотр рекламы у осла"
+msgstr "Eşek reklamları görüntüleme"
 
 #: EditorApp.cpp:87
 msgid "bot_name"
@@ -55,89 +65,89 @@ msgstr "Hustle Castle Bot"
 #: EditorArena.cpp:15 EditorBay.cpp:14 EditorEnemy.cpp:14 EditorEvent.cpp:13
 #: EditorInvasion.cpp:14 EditorPortal.cpp:14
 msgid "enable"
-msgstr "Включить"
+msgstr "Dahil etmek"
 
 #: EditorArena.cpp:25
 msgid "algorithm_file"
-msgstr "Алгоритм"
+msgstr "Algoritma"
 
 #: EditorArena.cpp:48
 msgid "arena_ticket"
-msgstr "Режим"
+msgstr "Düzen"
 
 #: EditorArena.cpp:54
 msgid "arena_ticket_0"
-msgstr "За яблоки"
+msgstr "Elma için"
 
 #: EditorArena.cpp:55
 msgid "arena_ticket_1"
-msgstr "За билеты"
+msgstr "biletler için"
 
 #: EditorArena.cpp:56
 msgid "arena_ticket_2"
-msgstr "Яблоки, билеты"
+msgstr "Elma, biletler"
 
 #: EditorArena.cpp:57
 msgid "arena_ticket_3"
-msgstr "Билеты, яблоки"
+msgstr "Biletler, elma"
 
 #: EditorArena.cpp:69
 msgid "arena_my_power_scale"
-msgstr "Множитель мощности"
+msgstr "Güç çarpanı"
 
 #: EditorArena.cpp:84
 msgid "arena_check_mail"
-msgstr "Забирать почту"
+msgstr "Posta almak"
 
 #: EditorArena.cpp:91
 msgid "arena_invite"
-msgstr "Приглашать в клан"
+msgstr "Klana davet et"
 
 #: EditorArena.cpp:100
 msgid "arena_stats"
-msgstr "Статистика"
+msgstr "İstatistik"
 
 #: EditorArena.cpp:106
 msgid "arena_stats_0"
-msgstr "Не ведется"
+msgstr "Devam etmiyor"
 
 #: EditorArena.cpp:107
 msgid "arena_stats_1"
-msgstr "Краткая"
+msgstr "Kısa"
 
 #: EditorArena.cpp:108
 msgid "arena_stats_2"
-msgstr "Полная"
+msgstr "Tam"
 
 #: EditorArena.cpp:119
 msgid "arena_ticket_buy"
-msgstr "Покупать билеты за алмазы"
+msgstr "Elmas için bilet satın alın"
 
 #: EditorBay.cpp:23 EditorEnemy.cpp:57 EditorEvent.cpp:22 EditorInvasion.cpp:23
 #: EditorPortal.cpp:40
 msgid "battle_magic_health_less"
-msgstr "Использовать заклинания, если здоровье меньше чем"
+msgstr "Sağlık daha az ise büyü kullanın"
 
 #: EditorBay.cpp:36 EditorEnemy.cpp:70 EditorEvent.cpp:34 EditorInvasion.cpp:36
 #: EditorPortal.cpp:53
 msgid "battle_relic"
-msgstr "Использовать реликвию"
+msgstr "Yadigarı kullan"
 
 #: EditorBay.cpp:43
 msgid "bay_apple"
-msgstr "Проходить за яблоки"
+msgstr "Elma geçmek"
 
 #: EditorBay.cpp:49
 msgid "bay_diamond"
-msgstr "Проходить за алмазы"
+msgstr "Elmas ile  geçmek"
 
 #: EditorConditions.cpp:11
 msgid "execution_conditions"
-msgstr "Условия выполнения"
+msgstr "Yürütme koşulları"
 
 #: EditorConditions.cpp:24
 msgid "conditions_time"
-msgstr "Время выполнения"
+msgstr "Kurşun zamanı"
 
 #: EditorConditions.cpp:33
 msgid "conditions_time_begin"
@@ -147,251 +157,252 @@ msgstr "С"
 #: EditorConditions.cpp:58 EditorConditions.cpp:102 EditorConditions.cpp:355
 #: EditorConditions.cpp:426
 msgid "everyday"
-msgstr "Каждый день"
+msgstr "Her gün"
 
 #: EditorConditions.cpp:40 EditorConditions.cpp:63 EditorConditions.cpp:335
 msgid "monday"
-msgstr "Понедельник"
+msgstr "pazartesi"
 
 #: EditorConditions.cpp:41 EditorConditions.cpp:64 EditorConditions.cpp:336
 msgid "tuesday"
-msgstr "Вторник"
+msgstr "salı"
 
 #: EditorConditions.cpp:42 EditorConditions.cpp:65 EditorConditions.cpp:337
 msgid "wednesday"
-msgstr "Среда"
+msgstr "carşamba"
 
 #: EditorConditions.cpp:43 EditorConditions.cpp:66 EditorConditions.cpp:338
 msgid "thursday"
-msgstr "Четверг"
+msgstr "perşembe"
 
 #: EditorConditions.cpp:44 EditorConditions.cpp:67 EditorConditions.cpp:339
 msgid "friday"
-msgstr "Пятница"
+msgstr "Cuma"
 
 #: EditorConditions.cpp:45 EditorConditions.cpp:68 EditorConditions.cpp:340
 msgid "saturday"
-msgstr "Суббота"
+msgstr "Cumartesi"
 
 #: EditorConditions.cpp:46 EditorConditions.cpp:69 EditorConditions.cpp:341
 msgid "sunday"
-msgstr "Воскресенье"
+msgstr "Pazar"
 
 #: EditorConditions.cpp:96
 msgid "conditions_time_end"
-msgstr "По"
+msgstr "İle"
 
 #: EditorConditions.cpp:128
 msgid "conditions_apple"
-msgstr "Яблоки"
+msgstr "Elmalar"
 
 #: EditorConditions.cpp:138 EditorConditions.cpp:174 EditorConditions.cpp:210
 #: EditorConditions.cpp:277 EditorConditions.cpp:293 EditorConditions.cpp:309
 #: EditorConditions.cpp:379 EditorConditions.cpp:392 EditorConditions.cpp:405
 msgid "conditions_<"
-msgstr "Меньше"
+msgstr "Daha az"
 
 #: EditorConditions.cpp:139 EditorConditions.cpp:175 EditorConditions.cpp:211
 #: EditorConditions.cpp:279 EditorConditions.cpp:295 EditorConditions.cpp:311
 #: EditorConditions.cpp:381 EditorConditions.cpp:394 EditorConditions.cpp:407
 msgid "conditions_>"
-msgstr "Больше"
+msgstr "Fazla"
 
 #: EditorConditions.cpp:164
 msgid "conditions_gold"
-msgstr "Золото"
+msgstr "Altın"
 
 #: EditorConditions.cpp:200
 msgid "conditions_mana"
-msgstr "Мана"
+msgstr "Mana"
 
 #: EditorConditions.cpp:236
 msgid "conditions_probability"
-msgstr "Вероятность"
+msgstr "Olasılık"
 
 #: EditorEnemy.cpp:23
 msgid "enemy_my_power_scale"
-msgstr "Верхний множитель мощности"
+msgstr "Üst güç çarpanı"
 
 #: EditorEnemy.cpp:40
 msgid "enemy_my_power_scale_min"
-msgstr "Нижний множитель мощности"
+msgstr "Alt güç çarpanı"
 
-#: EditorEnemy.cpp:77 EditorEvent.cpp:39 EditorInvasion.cpp:43 EditorPortal.cpp:67
+#: EditorEnemy.cpp:77 EditorEvent.cpp:39 EditorInvasion.cpp:43
+#: EditorPortal.cpp:67
 msgid "ignore_warning_hp"
-msgstr "Игнорировать предупреждение о неполном здоровье"
+msgstr "Eksik sağlık uyarısını Yoksay"
 
 #: EditorEnemy.cpp:83
 msgid "advertising_battle"
-msgstr "Смотреть рекламу, если проиграли бой"
+msgstr "Savaşı kaybederseniz reklamları izleyin"
 
 #: EditorEvent.cpp:44
 msgid "event_buy"
-msgstr "Проходить карту за алмазы"
+msgstr "Elmas için kart geçmek"
 
 #: EditorFrame.cpp:28
 msgid "update_not_required"
-msgstr "Обновление не требуется"
+msgstr "Güncelleme gerekli değil"
 
 #: EditorFrame.cpp:28
 msgid "update_available"
-msgstr "Требуется обновление"
+msgstr "Güncelleme gerekli"
 
 #: EditorFrame.cpp:33
 msgid "update"
-msgstr "Обновить"
+msgstr "Yenileme"
 
 #: EditorFrame.cpp:44
 msgid "language"
-msgstr "Язык"
+msgstr "Dil"
 
 #: EditorFrame.cpp:67
 msgid "arena"
-msgstr "Арена"
+msgstr "Arena"
 
 #: EditorFrame.cpp:68
 msgid "invasion"
-msgstr "Вторжения"
+msgstr "Salgınlar - istila"
 
 #: EditorFrame.cpp:69
 msgid "enemy"
-msgstr "Враги"
+msgstr "Düşmanlar"
 
 #: EditorFrame.cpp:70
 msgid "portal"
-msgstr "Портал"
+msgstr "Portal"
 
 #: EditorFrame.cpp:71
 msgid "bay"
-msgstr "Бухта"
+msgstr "Koy"
 
 #: EditorFrame.cpp:72
 msgid "advertising"
-msgstr "Реклама"
+msgstr "Reklam"
 
 #: EditorFrame.cpp:73
 msgid "resource"
-msgstr "Ресурсы"
+msgstr "Kaynak"
 
 #: EditorFrame.cpp:74
 msgid "event"
-msgstr "Ивент"
+msgstr "Etkinlik"
 
 #: EditorFrame.cpp:75
 msgid "other"
-msgstr "Другое"
+msgstr "Diğer"
 
 #: EditorFrame.cpp:76 EditorProgram.cpp:16 EditorSettings.cpp:9
 msgid "settings"
-msgstr "Настройки"
+msgstr "Ayarlar"
 
 #: EditorFrame.cpp:77
 msgid "log"
-msgstr "Лог"
+msgstr "Günlük"
 
 #: EditorFrame.cpp:93
 msgid "status_launched"
-msgstr "Запущено"
+msgstr "Başlatıldı"
 
 #: EditorFrame.cpp:93
 msgid "status_stopped"
-msgstr "Остановлено"
+msgstr "Durduruldu"
 
 #: EditorFrame.cpp:98
 msgid "emulator_id"
-msgstr "ID эмулятора:"
+msgstr "Emülatör kimliği:"
 
 #: EditorFrame.cpp:109
 msgid "emulator_name"
-msgstr "Название эмулятора:"
+msgstr "Emülatör adı:"
 
 #: EditorFrame.cpp:120
 msgid "start"
-msgstr "Старт"
+msgstr "Başlama"
 
 #: EditorFrame.cpp:194
 msgid "Select language"
-msgstr "Выбрать язык"
+msgstr "Dil seç"
 
 #: EditorOther.cpp:13
 msgid "program_start_cw"
-msgstr "Запустить клановую войну"
+msgstr "Çalıştırmak olması savaş"
 
 #: EditorOther.cpp:18
 msgid "program_goto_cw"
-msgstr "Сходить на клановую войну"
+msgstr "Bir ara olması savaş"
 
 #: EditorPortal.cpp:23
 msgid "portal_my_power_scale"
-msgstr "Множитель мощности"
+msgstr "Güç çarpanı"
 
 #: EditorPortal.cpp:60
 msgid "battle_portal_resurrection"
-msgstr "Использовать воскрешение"
+msgstr "Dirilişi kullan"
 
 #: EditorPortal.cpp:73
 msgid "portal_buy"
-msgstr "Покупать яблоки за алмазы"
+msgstr "Elmaslar için elma satın alın"
 
 #: EditorProgram.cpp:31
 msgid "program_collect"
-msgstr "Собирать ресурсы после выполнения режима"
+msgstr "Modu çalıştırdıktan sonra kaynakları toplayın"
 
 #: EditorProgram.cpp:39
 msgid "program_pause"
-msgstr "Пауза после выполнения режима (минуты)"
+msgstr "Modu çalıştırdıktan sonra Duraklat (dakika)"
 
 #: EditorResource.cpp:16
 msgid "request_type"
-msgstr "Попросить ресурсы"
+msgstr "Kaynakları isteyin"
 
 #: EditorResource.cpp:23
 msgid "request_type_0"
-msgstr "Яблоки"
+msgstr "Elmalar"
 
 #: EditorResource.cpp:24
 msgid "request_type_1"
-msgstr "Золото"
+msgstr "Altın"
 
 #: EditorResource.cpp:25
 msgid "request_type_2"
-msgstr "Мана"
+msgstr "Mana"
 
 #: EditorResource.cpp:34
 msgid "program_send_gift"
-msgstr "Отправить подарки"
+msgstr "Hediye gönder"
 
 #: EditorResource.cpp:40
 msgid "program_take_gift"
-msgstr "Забрать подарки"
+msgstr "Hediyeler almak"
 
 #: EditorResource.cpp:46
 msgid "program_daily_chest"
-msgstr "Открыть ежедневный сундук"
+msgstr "Günlük sandığı aç"
 
 #: EditorSettings.cpp:19
 msgid "blacklist_hours"
-msgstr ""
+msgstr "kara liste"
 
 #: EditorSettings.cpp:34
 msgid "pause"
-msgstr ""
+msgstr "duraklamak"
 
 #: EditorSettings.cpp:49
 msgid "short_state_timeout"
-msgstr ""
+msgstr "kısa durum zaman aşımı"
 
 #: EditorSettings.cpp:64
-msgid "long_state_timeout"
+msgid "uzun durum zaman aşımı"
 msgstr ""
 
 #: EditorSettings.cpp:79
 msgid "arena_find_timeout"
-msgstr ""
+msgstr "arena zaman aşımı bul"
 
 #: EditorSettings.cpp:94
 msgid "recovery_state_timeout"
-msgstr ""
+msgstr "kurtarma durumu zaman aşımı"
 
 #: EditorSettings.cpp:109
 msgid "emulator_stop_time"
@@ -444,58 +455,13 @@ msgid "note_bay"
 msgstr " "
 
 msgid "note_advertising"
-msgstr " "
+msgstr "not_kaykagı "
 
 msgid "note_resource"
 msgstr " "
 
 msgid "note_event"
-msgstr " "
+msgstr " not olayo"
 
 msgid "note_other"
 msgstr " "
-
-msgid "authorization"
-msgstr "Авторизация"
-
-msgid "email"
-msgstr "Емейл"
-
-msgid "send_email"
-msgstr "Отправить"
-
-msgid "access_code"
-msgstr "Код доступа"
-
-msgid "enter_you_email"
-msgstr "Введите ваш емейл"
-
-msgid "enter_you_access_code"
-msgstr "Введите ваш код доступа"
-
-msgid "emulator_settings"
-msgstr "Настройки эмулятора"
-
-msgid "emulator_path"
-msgstr "Путь к эмулятору"
-
-msgid "correct_emulator_path"
-msgstr "Правильный путь к эмулятору"
-
-msgid "wrong_emulator_path"
-msgstr "Неправильный путь к эмулятору! Запустите эмулятор (Nox) и нажмите кнопку \"Исправить\""
-
-msgid "fix"
-msgstr "Исправить"
-
-msgid "capture_settings"
-msgstr "Настройки распознавания"
-
-msgid "capture_mode"
-msgstr ""
-
-msgid "compare_method"
-msgstr ""
-
-msgid "esc_additional_mode"
-msgstr ""
