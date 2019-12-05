@@ -1,0 +1,1 @@
+bin\hc_bot.exe --additionally "timeleft"

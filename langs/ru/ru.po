@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2019-12-02 06:25+0300\n"
-"PO-Revision-Date: 2019-12-03 12:14+0300\n"
+"PO-Revision-Date: 2019-12-05 12:17+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -499,3 +499,12 @@ msgstr ""
 
 msgid "esc_additional_mode"
 msgstr ""
+
+msgid "access_timeleft"
+msgstr "Осталось времени:"
+
+msgid "unknown"
+msgstr "неизвестно"
+
+msgid "stop"
+msgstr "Стоп"

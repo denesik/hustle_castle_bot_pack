@@ -26,3 +26,4 @@ config.json
 *.blacklist
 /config_editor.txt
 /editor.cfg
+/bin/timeleft.txt
