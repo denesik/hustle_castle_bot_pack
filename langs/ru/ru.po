@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2019-12-02 06:25+0300\n"
-"PO-Revision-Date: 2019-12-05 12:17+0300\n"
+"PO-Revision-Date: 2019-12-07 16:10+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -508,3 +508,21 @@ msgstr "неизвестно"
 
 msgid "stop"
 msgstr "Стоп"
+
+msgid "arena_my_power_scale_note"
+msgstr "Нападаем, если мощность противника меньше:"
+
+msgid "my_squad_power"
+msgstr "Мощность моего отряда:"
+
+msgid "enemy_my_power_scale_note"
+msgstr "Нападаем, если мощность противника меньше:"
+
+msgid "enemy_my_power_scale_min_note"
+msgstr "Нападаем, если мощность противника больше:"
+
+msgid "portal_my_power_scale_note"
+msgstr "Нападаем, если мощность противника меньше:"
+
+msgid "portal_level_note"
+msgstr "Проходим уровень:"
