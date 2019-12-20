@@ -2,372 +2,369 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2019-12-02 06:25+0300\n"
-"PO-Revision-Date: 2019-12-20 05:17+0300\n"
+"PO-Revision-Date: 2019-12-20 05:16+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: ru\n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 2.2.4\n"
 "X-Poedit-Basepath: ../../src/editor\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 "
-"|| n%100>14) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : "
+"2);\n"
 "X-Poedit-KeywordsList: _\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: EditorAdv.cpp:14
 msgid "advertising_apple"
-msgstr "Просмотр рекламы, если закончились яблоки"
+msgstr "Meldung wenn die Äpfel ausgehen"
 
 #: EditorAdv.cpp:20
 msgid "advertising_adv_chest"
-msgstr "Просмотр рекламы в рекламном сундуке"
+msgstr "Werbung in der Werbetruhe ansehen"
 
 #: EditorAdv.cpp:26
 msgid "advertising_daily_quests"
-msgstr "Просмотр рекламы в ежедневных заданиях"
+msgstr "Werbung in den täglichen Aufgaben ansehen"
 
 #: EditorAdv.cpp:32
 msgid "advertising_arena"
-msgstr "Просмотр рекламы на арене"
+msgstr "Werbung in der Arena ansehen"
 
 #: EditorAdv.cpp:38
 msgid "advertising_portal"
-msgstr "Просмотр рекламы в портале"
+msgstr "Werbung im Portal ansehen"
 
 #: EditorAdv.cpp:44
 msgid "advertising_train_room"
-msgstr "Просмотр рекламы в тренировочной"
+msgstr "Werbung im Ausbildungsraum ansehen"
 
 #: EditorAdv.cpp:50
 msgid "advertising_event"
-msgstr "Просмотр рекламы в ивенте"
+msgstr "Werbung im Event ansehen"
 
 #: EditorAdv.cpp:56
 msgid "advertising_donkey"
-msgstr "Просмотр рекламы у осла"
+msgstr "Werbung des Esels ansehen"
 
 #: EditorApp.cpp:87
 msgid "bot_name"
 msgstr "Hustle Castle Bot"
 
-#: EditorArena.cpp:15 EditorBay.cpp:14 EditorEnemy.cpp:14 EditorEvent.cpp:13
-#: EditorInvasion.cpp:14 EditorPortal.cpp:14
+#: EditorArena.cpp:15 EditorBay.cpp:14 EditorEnemy.cpp:14 EditorEvent.cpp:13 EditorInvasion.cpp:14
+#: EditorPortal.cpp:14
 msgid "enable"
-msgstr "Включить"
+msgstr "Aktivieren"
 
 #: EditorArena.cpp:25
 msgid "algorithm_file"
-msgstr "Алгоритм"
+msgstr "Algorithmus"
 
 #: EditorArena.cpp:48
 msgid "arena_ticket"
-msgstr "Режим"
+msgstr "Modus"
 
 #: EditorArena.cpp:54
 msgid "arena_ticket_0"
-msgstr "За яблоки"
+msgstr "Für Äpfel"
 
 #: EditorArena.cpp:55
 msgid "arena_ticket_1"
-msgstr "За билеты"
+msgstr "Für Tickets"
 
 #: EditorArena.cpp:56
 msgid "arena_ticket_2"
-msgstr "Яблоки, билеты"
+msgstr "Äpfel dann Tickets"
 
 #: EditorArena.cpp:57
 msgid "arena_ticket_3"
-msgstr "Билеты, яблоки"
+msgstr "Tickets dann Äpfel"
 
 #: EditorArena.cpp:69
 msgid "arena_my_power_scale"
-msgstr "Множитель мощности"
+msgstr "Leistungsfaktor"
 
 #: EditorArena.cpp:84
 msgid "arena_check_mail"
-msgstr "Забирать почту"
+msgstr "Post abholen"
 
 #: EditorArena.cpp:91
 msgid "arena_invite"
-msgstr "Приглашать в клан"
+msgstr "Zum Clan einladen"
 
 #: EditorArena.cpp:100
 msgid "arena_stats"
-msgstr "Статистика"
+msgstr "Statistiken"
 
 #: EditorArena.cpp:106
 msgid "arena_stats_0"
-msgstr "Не ведется"
+msgstr "Nicht durchgeführt"
 
 #: EditorArena.cpp:107
 msgid "arena_stats_1"
-msgstr "Краткая"
+msgstr "Kurz"
 
 #: EditorArena.cpp:108
 msgid "arena_stats_2"
-msgstr "Полная"
+msgstr "Voll"
 
 #: EditorArena.cpp:119
 msgid "arena_ticket_buy"
-msgstr "Покупать билеты за алмазы"
+msgstr "Mit Diamanten Tickets kaufen"
 
-#: EditorBay.cpp:23 EditorEnemy.cpp:57 EditorEvent.cpp:22 EditorInvasion.cpp:23
-#: EditorPortal.cpp:40
+#: EditorBay.cpp:23 EditorEnemy.cpp:57 EditorEvent.cpp:22 EditorInvasion.cpp:23 EditorPortal.cpp:40
 msgid "battle_magic_health_less"
-msgstr "Использовать заклинания, если здоровье меньше чем"
+msgstr "Zaubersprüche verwenden wenn die Gesundheit geringer ist als"
 
-#: EditorBay.cpp:36 EditorEnemy.cpp:70 EditorEvent.cpp:34 EditorInvasion.cpp:36
-#: EditorPortal.cpp:53
+#: EditorBay.cpp:36 EditorEnemy.cpp:70 EditorEvent.cpp:34 EditorInvasion.cpp:36 EditorPortal.cpp:53
 msgid "battle_relic"
-msgstr "Использовать реликвию"
+msgstr "Relikt verwenden"
 
 #: EditorBay.cpp:43
 msgid "bay_apple"
-msgstr "Проходить за яблоки"
+msgstr "Für Äpfel beitreten"
 
 #: EditorBay.cpp:49
 msgid "bay_diamond"
-msgstr "Проходить за алмазы"
+msgstr "Für Diamanten beitreten"
 
 #: EditorConditions.cpp:11
 msgid "execution_conditions"
-msgstr "Условия выполнения"
+msgstr "Ausführungsbedingungen"
 
 #: EditorConditions.cpp:24
 msgid "conditions_time"
-msgstr "Время выполнения"
+msgstr "Vorlaufzeit"
 
 #: EditorConditions.cpp:33
 msgid "conditions_time_begin"
 msgstr "С"
 
-#: EditorConditions.cpp:39 EditorConditions.cpp:52 EditorConditions.cpp:55
-#: EditorConditions.cpp:58 EditorConditions.cpp:102 EditorConditions.cpp:355
-#: EditorConditions.cpp:426
+#: EditorConditions.cpp:39 EditorConditions.cpp:52 EditorConditions.cpp:55 EditorConditions.cpp:58
+#: EditorConditions.cpp:102 EditorConditions.cpp:355 EditorConditions.cpp:426
 msgid "everyday"
-msgstr "Каждый день"
+msgstr "Täglich"
 
 #: EditorConditions.cpp:40 EditorConditions.cpp:63 EditorConditions.cpp:335
 msgid "monday"
-msgstr "Понедельник"
+msgstr "Montag"
 
 #: EditorConditions.cpp:41 EditorConditions.cpp:64 EditorConditions.cpp:336
 msgid "tuesday"
-msgstr "Вторник"
+msgstr "Dienstag"
 
 #: EditorConditions.cpp:42 EditorConditions.cpp:65 EditorConditions.cpp:337
 msgid "wednesday"
-msgstr "Среда"
+msgstr "Mittwoch"
 
 #: EditorConditions.cpp:43 EditorConditions.cpp:66 EditorConditions.cpp:338
 msgid "thursday"
-msgstr "Четверг"
+msgstr "Donnerstag"
 
 #: EditorConditions.cpp:44 EditorConditions.cpp:67 EditorConditions.cpp:339
 msgid "friday"
-msgstr "Пятница"
+msgstr "Freitag"
 
 #: EditorConditions.cpp:45 EditorConditions.cpp:68 EditorConditions.cpp:340
 msgid "saturday"
-msgstr "Суббота"
+msgstr "Samstag"
 
 #: EditorConditions.cpp:46 EditorConditions.cpp:69 EditorConditions.cpp:341
 msgid "sunday"
-msgstr "Воскресенье"
+msgstr "Sonntag"
 
 #: EditorConditions.cpp:96
 msgid "conditions_time_end"
-msgstr "По"
+msgstr "Von"
 
 #: EditorConditions.cpp:128
 msgid "conditions_apple"
-msgstr "Яблоки"
+msgstr "Die Äpfel"
 
-#: EditorConditions.cpp:138 EditorConditions.cpp:174 EditorConditions.cpp:210
-#: EditorConditions.cpp:277 EditorConditions.cpp:293 EditorConditions.cpp:309
-#: EditorConditions.cpp:379 EditorConditions.cpp:392 EditorConditions.cpp:405
+#: EditorConditions.cpp:138 EditorConditions.cpp:174 EditorConditions.cpp:210 EditorConditions.cpp:277
+#: EditorConditions.cpp:293 EditorConditions.cpp:309 EditorConditions.cpp:379 EditorConditions.cpp:392
+#: EditorConditions.cpp:405
 msgid "conditions_<"
-msgstr "Меньше"
+msgstr "Weniger"
 
-#: EditorConditions.cpp:139 EditorConditions.cpp:175 EditorConditions.cpp:211
-#: EditorConditions.cpp:279 EditorConditions.cpp:295 EditorConditions.cpp:311
-#: EditorConditions.cpp:381 EditorConditions.cpp:394 EditorConditions.cpp:407
+#: EditorConditions.cpp:139 EditorConditions.cpp:175 EditorConditions.cpp:211 EditorConditions.cpp:279
+#: EditorConditions.cpp:295 EditorConditions.cpp:311 EditorConditions.cpp:381 EditorConditions.cpp:394
+#: EditorConditions.cpp:407
 msgid "conditions_>"
-msgstr "Больше"
+msgstr "Mehr"
 
 #: EditorConditions.cpp:164
 msgid "conditions_gold"
-msgstr "Золото"
+msgstr "Gold"
 
 #: EditorConditions.cpp:200
 msgid "conditions_mana"
-msgstr "Мана"
+msgstr "Маnna"
 
 #: EditorConditions.cpp:236
 msgid "conditions_probability"
-msgstr "Вероятность"
+msgstr "Wahrscheinlichkeit"
 
 #: EditorEnemy.cpp:23
 msgid "enemy_my_power_scale"
-msgstr "Верхний множитель мощности"
+msgstr "Oberer Leistungsfaktor"
 
 #: EditorEnemy.cpp:40
 msgid "enemy_my_power_scale_min"
-msgstr "Нижний множитель мощности"
+msgstr "Unterer Leistungsfaktor"
 
 #: EditorEnemy.cpp:77 EditorEvent.cpp:39 EditorInvasion.cpp:43 EditorPortal.cpp:67
 msgid "ignore_warning_hp"
-msgstr "Игнорировать предупреждение о неполном здоровье"
+msgstr "Teilintegritätswarnung ignorieren"
 
 #: EditorEnemy.cpp:83
 msgid "advertising_battle"
-msgstr "Смотреть рекламу, если проиграли бой"
+msgstr "Werbung bei verlorenem Kampf"
 
 #: EditorEvent.cpp:44
 msgid "event_buy"
-msgstr "Проходить карту за алмазы"
+msgstr "Beitritt für Diamanten"
 
 #: EditorFrame.cpp:28
 msgid "update_not_required"
-msgstr "Обновление не требуется"
+msgstr "kein Update erforderlich"
 
 #: EditorFrame.cpp:28
 msgid "update_available"
-msgstr "Требуется обновление"
+msgstr "Update erforderlich"
 
 #: EditorFrame.cpp:33
 msgid "update"
-msgstr "Обновить"
+msgstr "Aktualisieren"
 
 #: EditorFrame.cpp:44
 msgid "language"
-msgstr "Язык"
+msgstr "Sprache"
 
 #: EditorFrame.cpp:67
 msgid "arena"
-msgstr "Арена"
+msgstr "Arena"
 
 #: EditorFrame.cpp:68
 msgid "invasion"
-msgstr "Вторжения"
+msgstr "Invasion"
 
 #: EditorFrame.cpp:69
 msgid "enemy"
-msgstr "Враги"
+msgstr "Feind"
 
 #: EditorFrame.cpp:70
 msgid "portal"
-msgstr "Портал"
+msgstr "Portal"
 
 #: EditorFrame.cpp:71
 msgid "bay"
-msgstr "Бухта"
+msgstr "Bay"
 
 #: EditorFrame.cpp:72
 msgid "advertising"
-msgstr "Реклама"
+msgstr "Werbung"
 
 #: EditorFrame.cpp:73
 msgid "resource"
-msgstr "Ресурсы"
+msgstr "Ressourcen"
 
 #: EditorFrame.cpp:74
 msgid "event"
-msgstr "Ивент"
+msgstr "Event"
 
 #: EditorFrame.cpp:75
 msgid "other"
-msgstr "Другое"
+msgstr "andere"
 
 #: EditorFrame.cpp:76 EditorProgram.cpp:16 EditorSettings.cpp:9
 msgid "settings"
-msgstr "Настройки"
+msgstr "Einstellungen"
 
 #: EditorFrame.cpp:77
 msgid "log"
-msgstr "Лог"
+msgstr "Log"
 
 #: EditorFrame.cpp:93
 msgid "status_launched"
-msgstr "Запущено"
+msgstr "gestartet"
 
 #: EditorFrame.cpp:93
 msgid "status_stopped"
-msgstr "Остановлено"
+msgstr "wird gestoppt"
 
 #: EditorFrame.cpp:98
 msgid "emulator_id"
-msgstr "ID эмулятора:"
+msgstr "Emulator ID:"
 
 #: EditorFrame.cpp:109
 msgid "emulator_name"
-msgstr "Название эмулятора:"
+msgstr "Emulator Name:"
 
 #: EditorFrame.cpp:120
 msgid "start"
-msgstr "Старт"
+msgstr "Start"
 
 #: EditorFrame.cpp:194
 msgid "Select language"
-msgstr "Выбрать язык"
+msgstr "Sprache wählen"
 
 #: EditorOther.cpp:13
 msgid "program_start_cw"
-msgstr "Запустить клановую войну"
+msgstr "Clankrieg starten"
 
 #: EditorOther.cpp:18
 msgid "program_goto_cw"
-msgstr "Сходить на клановую войну"
+msgstr "Clankrieg beitreten"
 
 #: EditorPortal.cpp:23
 msgid "portal_my_power_scale"
-msgstr "Множитель мощности"
+msgstr "Leistungsfaktor"
 
 #: EditorPortal.cpp:60
 msgid "battle_portal_resurrection"
-msgstr "Использовать воскрешение"
+msgstr "Auferstehung nutzen"
 
 #: EditorPortal.cpp:73
 msgid "portal_buy"
-msgstr "Покупать яблоки за алмазы"
+msgstr "Äpfel für Diamanten kaufen"
 
 #: EditorProgram.cpp:31
 msgid "program_collect"
-msgstr "Собирать ресурсы после выполнения режима"
+msgstr "Ressourcen sammeln nachdem der Modus abgeschlossen ist"
 
 #: EditorProgram.cpp:39
 msgid "program_pause"
-msgstr "Пауза после выполнения режима (минуты)"
+msgstr "Pause nach Modus (Minuten)"
 
 #: EditorResource.cpp:16
 msgid "request_type"
-msgstr "Попросить ресурсы"
+msgstr "Ressourcen anfordern"
 
 #: EditorResource.cpp:23
 msgid "request_type_0"
-msgstr "Яблоки"
+msgstr "Äpfel"
 
 #: EditorResource.cpp:24
 msgid "request_type_1"
-msgstr "Золото"
+msgstr "Gold"
 
 #: EditorResource.cpp:25
 msgid "request_type_2"
-msgstr "Мана"
+msgstr "Manna"
 
 #: EditorResource.cpp:34
 msgid "program_send_gift"
-msgstr "Отправить подарки"
+msgstr "Geschenke senden"
 
 #: EditorResource.cpp:40
 msgid "program_take_gift"
-msgstr "Забрать подарки"
+msgstr "Geschenke holen"
 
 #: EditorResource.cpp:46
 msgid "program_daily_chest"
-msgstr "Открыть ежедневный сундук"
+msgstr "tägliche Truhe öffnen"
 
 #: EditorSettings.cpp:19
 msgid "blacklist_hours"
@@ -375,7 +372,7 @@ msgstr ""
 
 #: EditorSettings.cpp:34
 msgid "pause"
-msgstr "Пауза"
+msgstr ""
 
 #: EditorSettings.cpp:49
 msgid "short_state_timeout"
@@ -456,40 +453,41 @@ msgid "note_other"
 msgstr " "
 
 msgid "authorization"
-msgstr "Авторизация"
+msgstr "Einloggen"
 
 msgid "email"
-msgstr "Емейл"
+msgstr "E-mail"
 
 msgid "send_email"
-msgstr "Отправить"
+msgstr "senden"
 
 msgid "access_code"
-msgstr "Код доступа"
+msgstr "Zugangscode"
 
 msgid "enter_you_email"
-msgstr "Введите ваш емейл"
+msgstr "Email eingeben"
 
 msgid "enter_you_access_code"
-msgstr "Введите ваш код доступа"
+msgstr "Zugangscode eingeben"
 
 msgid "emulator_settings"
-msgstr "Настройки эмулятора"
+msgstr "Emulator Einstellungen"
 
 msgid "emulator_path"
-msgstr "Путь к эмулятору"
+msgstr "Emulator Pfad"
 
 msgid "correct_emulator_path"
-msgstr "Правильный путь к эмулятору"
+msgstr "Richter Emulator Pfad"
 
 msgid "wrong_emulator_path"
-msgstr "Неправильный путь к эмулятору! Запустите эмулятор (Nox) и нажмите кнопку \"Исправить\""
+msgstr ""
+"Falscher Weg zum Emulator! Starten Sie den Emulator (Nox) und klicken Sie auf die Schaltfläche \"berichtigen\""
 
 msgid "fix"
-msgstr "Исправить"
+msgstr "berichtigen"
 
 msgid "capture_settings"
-msgstr "Настройки распознавания"
+msgstr "Erkennungseinstellungen"
 
 msgid "capture_mode"
 msgstr ""
@@ -501,31 +499,28 @@ msgid "esc_additional_mode"
 msgstr ""
 
 msgid "access_timeleft"
-msgstr "Осталось времени:"
+msgstr "Zeit bis:"
 
 msgid "unknown"
-msgstr "неизвестно"
+msgstr "unbekannt"
 
 msgid "stop"
-msgstr "Стоп"
-
-msgid "continue"
-msgstr "Продолжить"
+msgstr "Stop"
 
 msgid "arena_my_power_scale_note"
-msgstr "Нападаем, если мощность противника меньше:"
+msgstr "Angriff wenn der Gegner weniger Macht hat:"
 
 msgid "my_squad_power"
-msgstr "Мощность моего отряда:"
+msgstr "Kraft meiner Truppe:"
 
 msgid "enemy_my_power_scale_note"
-msgstr "Нападаем, если мощность противника меньше:"
+msgstr "Angriff wenn der Gegner weniger Macht hat:"
 
 msgid "enemy_my_power_scale_min_note"
-msgstr "Нападаем, если мощность противника больше:"
+msgstr "Angriff wenn die Macht des Feindes größer ist:"
 
 msgid "portal_my_power_scale_note"
-msgstr "Нападаем, если мощность противника меньше:"
+msgstr "Angriff wenn der Gegner weniger Macht hat:"
 
 msgid "portal_level_note"
-msgstr "Проходим уровень:"
+msgstr "Level bis :"
