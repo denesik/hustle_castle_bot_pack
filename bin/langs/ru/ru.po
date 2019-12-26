@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "POT-Creation-Date: 2019-12-02 06:25+0300\n"
-"PO-Revision-Date: 2019-12-20 05:17+0300\n"
+"PO-Revision-Date: 2019-12-26 19:07+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -47,10 +47,6 @@ msgstr "Просмотр рекламы в ивенте"
 #: EditorAdv.cpp:56
 msgid "advertising_donkey"
 msgstr "Просмотр рекламы у осла"
-
-#: EditorApp.cpp:87
-msgid "bot_name"
-msgstr "Hustle Castle Bot"
 
 #: EditorArena.cpp:15 EditorBay.cpp:14 EditorEnemy.cpp:14 EditorEvent.cpp:13
 #: EditorInvasion.cpp:14 EditorPortal.cpp:14
@@ -289,14 +285,6 @@ msgstr "Настройки"
 msgid "log"
 msgstr "Лог"
 
-#: EditorFrame.cpp:93
-msgid "status_launched"
-msgstr "Запущено"
-
-#: EditorFrame.cpp:93
-msgid "status_stopped"
-msgstr "Остановлено"
-
 #: EditorFrame.cpp:98
 msgid "emulator_id"
 msgstr "ID эмулятора:"
@@ -339,7 +327,7 @@ msgstr "Собирать ресурсы после выполнения режи
 
 #: EditorProgram.cpp:39
 msgid "program_pause"
-msgstr "Пауза после выполнения режима (минуты)"
+msgstr "Пауза после выполнения режима (секунды)"
 
 #: EditorResource.cpp:16
 msgid "request_type"
@@ -369,91 +357,9 @@ msgstr "Забрать подарки"
 msgid "program_daily_chest"
 msgstr "Открыть ежедневный сундук"
 
-#: EditorSettings.cpp:19
-msgid "blacklist_hours"
-msgstr ""
-
-#: EditorSettings.cpp:34
-msgid "pause"
-msgstr "Пауза"
-
-#: EditorSettings.cpp:49
-msgid "short_state_timeout"
-msgstr ""
-
-#: EditorSettings.cpp:64
-msgid "long_state_timeout"
-msgstr ""
-
-#: EditorSettings.cpp:79
-msgid "arena_find_timeout"
-msgstr ""
-
-#: EditorSettings.cpp:94
-msgid "recovery_state_timeout"
-msgstr ""
-
-#: EditorSettings.cpp:109
-msgid "emulator_stop_time"
-msgstr ""
-
-#: EditorSettings.cpp:124
-msgid "emulator_start_time"
-msgstr ""
-
-#: EditorSettings.cpp:140
-msgid "disable_recovery"
-msgstr ""
-
-#: EditorSettings.cpp:155
-msgid "open_timeout"
-msgstr ""
-
-#: EditorSettings.cpp:170
-msgid "start_program_pause"
-msgstr ""
-
-#: EditorSettings.cpp:185
-msgid "another_device_timeout"
-msgstr ""
-
-#: EditorSettings.cpp:200
-msgid "advertising_timeout"
-msgstr ""
-
 #: LangSelector.cpp:48
 msgid "ok"
 msgstr "ок"
-
-msgid "note_"
-msgstr " "
-
-msgid "note_arena"
-msgstr " "
-
-msgid "note_invasion"
-msgstr " "
-
-msgid "note_enemy"
-msgstr " "
-
-msgid "note_portal"
-msgstr " "
-
-msgid "note_bay"
-msgstr " "
-
-msgid "note_advertising"
-msgstr " "
-
-msgid "note_resource"
-msgstr " "
-
-msgid "note_event"
-msgstr " "
-
-msgid "note_other"
-msgstr " "
 
 msgid "authorization"
 msgstr "Авторизация"
@@ -491,15 +397,6 @@ msgstr "Исправить"
 msgid "capture_settings"
 msgstr "Настройки распознавания"
 
-msgid "capture_mode"
-msgstr ""
-
-msgid "compare_method"
-msgstr ""
-
-msgid "esc_additional_mode"
-msgstr ""
-
 msgid "access_timeleft"
 msgstr "Осталось времени:"
 
@@ -529,3 +426,229 @@ msgstr "Нападаем, если мощность противника мен�
 
 msgid "portal_level_note"
 msgstr "Проходим уровень:"
+
+msgid "updating"
+msgstr "Обновление"
+
+msgid "local_version"
+msgstr "Текущая версия"
+
+msgid "remote_version"
+msgstr "Последняя версия"
+
+msgid "downloading"
+msgstr "Загрузка"
+
+msgid "unpacking"
+msgstr "Распаковка"
+
+msgid "cancel"
+msgstr "Отмена"
+
+msgid "pause_min"
+msgstr "Минимум"
+
+msgid "pause_max"
+msgstr "Максимум"
+
+msgid "repeat_count"
+msgstr "Количество повторений"
+
+msgid "rank"
+msgstr "Кубки"
+
+msgid "craft"
+msgstr "Крафт"
+
+msgid "program_add_magic"
+msgstr "Добавить заклинания"
+
+msgid "craft_home_pos"
+msgstr "Расположение комнаты"
+
+msgid "Top"
+msgstr "Сверху"
+
+msgid "Middle"
+msgstr "Посредине"
+
+msgid "Down"
+msgstr "Снизу"
+
+msgid "craft_add_count"
+msgstr "Количество заклинаний"
+
+msgid "program_craft_magic"
+msgstr "Изготовить заклинания"
+
+msgid "craft_new_count"
+msgstr "Количество заклинаний и тип"
+
+msgid "program_craft_item"
+msgstr "Изготовить предмет"
+
+msgid "craft_item_type"
+msgstr "Тип предмета"
+
+msgid "item_type_1"
+msgstr "Воин"
+
+msgid "item_type_2"
+msgstr "Лучник"
+
+msgid "item_type_3"
+msgstr "Маг"
+
+msgid "item_quality_1"
+msgstr "Зеленый"
+
+msgid "item_quality_2"
+msgstr "Синий"
+
+msgid "item_quality_3"
+msgstr "Фиолетовый"
+
+msgid "item_quality_4"
+msgstr "Оранжевый"
+
+msgid "item_quality_5"
+msgstr "Доступный"
+
+msgid "magic_type_1"
+msgstr "Магический шар"
+
+msgid "magic_type_2"
+msgstr "Дух"
+
+msgid "magic_type_3"
+msgstr "Щит"
+
+msgid "magic_type_4"
+msgstr "Луч"
+
+msgid "magic_type_5"
+msgstr "Призыв"
+
+msgid "magic_type_6"
+msgstr "Ледянка"
+
+msgid "magic_type_7"
+msgstr "Огненный шар"
+
+msgid "magic_type_8"
+msgstr "Уелительная поляна"
+
+msgid "magic_type_9"
+msgstr "Контроль разума"
+
+msgid "war"
+msgstr "Война"
+
+msgid "note_"
+msgstr " "
+
+msgid "note_arena"
+msgstr ""
+"standard.chai Бьет вниз-вниз-вниз-вверх-вверх\n"
+"adaptive.chai Если мы на последней строчке, то убивается об самого сильного и бьет 4 вверх, "
+"иначе работает как алгоритм standard.chai\n"
+"end_game.chai Если мы на последней строчке, то убивается об самого сильного и бьет 4 вверх, "
+"иначе бьет вниз-вверх-вверх-вверх"
+
+msgid "note_invasion"
+msgstr " "
+
+msgid "note_enemy"
+msgstr " "
+
+msgid "note_portal"
+msgstr " "
+
+msgid "note_bay"
+msgstr " "
+
+msgid "note_advertising"
+msgstr " "
+
+msgid "note_resource"
+msgstr " "
+
+msgid "note_event"
+msgstr " "
+
+msgid "note_rank"
+msgstr " "
+
+msgid "note_craft"
+msgstr " "
+
+msgid "note_war"
+msgstr " "
+
+msgid "buton_pause"
+msgstr "Пауза"
+
+#: =====================
+msgid "capture_mode"
+msgstr "capture_mode Захват изображения. 0 - обычный, 1 - в фоне."
+
+msgid "compare_method"
+msgstr "compare_method Метод сравнения. 0 - norm, 1 - matchTemplate."
+
+msgid "esc_additional_mode"
+msgstr "esc_additional_mode Режим нажатия esc. 0 - обычный, 1 - с фокусировкой окна."
+
+#: EditorSettings.cpp:19
+msgid "blacklist_hours"
+msgstr "blacklist_hours Время хранения записи в черном списке в часах."
+
+#: EditorSettings.cpp:34
+msgid "pause"
+msgstr "pause Пауза между сканированием экрана"
+
+#: EditorSettings.cpp:49
+msgid "short_state_timeout"
+msgstr "short_state_timeout Время короткого состояния"
+
+#: EditorSettings.cpp:64
+msgid "long_state_timeout"
+msgstr "long_state_timeout Время длинного состояния"
+
+#: EditorSettings.cpp:79
+msgid "arena_find_timeout"
+msgstr "arena_find_timeout Время поиска арены"
+
+#: EditorSettings.cpp:94
+msgid "recovery_state_timeout"
+msgstr "recovery_state_timeout Время на восстановление"
+
+#: EditorSettings.cpp:109
+msgid "emulator_stop_time"
+msgstr "emulator_stop_time Время закрытия эмулятора"
+
+#: EditorSettings.cpp:124
+msgid "emulator_start_time"
+msgstr "emulator_start_time Время запуска эмулятора"
+
+#: EditorSettings.cpp:140
+msgid "disable_recovery"
+msgstr "disable_recovery Отключить систему восстановления? 1 - да."
+
+#: EditorSettings.cpp:155
+msgid "open_timeout"
+msgstr "open_timeout Время на открытие страницы"
+
+#: EditorSettings.cpp:170
+msgid "start_program_pause"
+msgstr "start_program_pause Пауза перед запуском режима"
+
+#: EditorSettings.cpp:185
+msgid "another_device_timeout"
+msgstr "another_device_timeout Время ожидания другого устройства"
+
+#: EditorSettings.cpp:200
+msgid "advertising_timeout"
+msgstr "advertising_timeout Время на просмотр рекламы"
+
+msgid "collect_mail"
+msgstr "Забрать почту"
