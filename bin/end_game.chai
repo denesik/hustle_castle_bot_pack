@@ -319,40 +319,16 @@ def GetPhase3(data)
 
 def main(power_data, phase)
 {
-	var reserve_choise = false
 	var scaled_power_data = GetScaled(power_data)
 	
 	//PrintPowerData(scaled_power_data)
 	if (phase == 1)
 	{
-		var me_pos = FindMe(scaled_power_data)
-		// наша позиция с конца
-		var reverse_me_pos = scaled_power_data.size() - me_pos 
-		
-		// Если есть сильные противники и мы на последней строчке
-		if (CountStrong(scaled_power_data) > 0 && reverse_me_pos < (scaled_power_data.size() / 3 + 1))
+		var weak = GetWeakSorted(scaled_power_data)
+		if (weak.size() != 0)
 		{
-			// Пытаемся убиться об самого сильного.
-			var list = GetAllSorted(scaled_power_data);
-			if (list.size() != 0)
-			{
-				var ret_val = list[list.size() - 1].pos
-				return ret_val
-			}
-			
-			reserve_choise = true
-		}
-		else
-		{
-			// Бьем самого слабого.
-			var weak = GetWeakSorted(scaled_power_data)
-			if (weak.size() != 0)
-			{
-				var ret_val = weak[0].pos
-				return ret_val
-			}
-			
-			reserve_choise = true
+			var ret_val = weak[0].pos
+			return ret_val
 		}
 	}	
 	
@@ -366,11 +342,8 @@ def main(power_data, phase)
 			var ret_val = list[0].pos
 			return ret_val
 		}
-		
-		reserve_choise = true
 	}
 	
-	if (reserve_choise)
 	{
 		// Если не получилось, атакуем самого слабого из списка слабых.
 		auto opps = GetWeakSorted(scaled_power_data);
@@ -381,7 +354,6 @@ def main(power_data, phase)
 		}
 	}
 	
-	if (reserve_choise)
 	{
 		// Если не получилось, атакуем самого слабого из всех доступных, исключая тех кто в чс.
 		var opps = GetAllWithoutBlacklistSorted(scaled_power_data);
@@ -396,13 +368,13 @@ def main(power_data, phase)
 }
 
 
-
 //power_data = TestSetInputPhaseOne()
 //phase = 1
 //PrintPowerData(power_data)
 //var pos = main(power_data, phase)
 //print(pos)
 
+log_print("alg: end_game")
 PrintPowerData(power_data)
 //print(phase)
 
