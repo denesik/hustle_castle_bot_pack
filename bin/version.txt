@@ -1,1 +1,1 @@
-{"system_version": "HC_66"}
+{"system_version": "HC_67"}
